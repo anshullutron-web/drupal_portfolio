@@ -1,0 +1,25 @@
+uuid: 62a9159b-e669-4323-b1e8-b4c42b1ed331
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:59da559c-67be-4c89-9139-dceff1be01c4'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: map
+theme: corporateclean
+region: footer_top_first
+weight: -14
+provider: null
+plugin: 'block_content:59da559c-67be-4c89-9139-dceff1be01c4'
+settings:
+  id: 'block_content:59da559c-67be-4c89-9139-dceff1be01c4'
+  label: Map
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
