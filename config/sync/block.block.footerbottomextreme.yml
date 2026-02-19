@@ -1,0 +1,25 @@
+uuid: 18417b38-2361-4e09-bbc1-cf10073fcc7b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:684d67c4-d7a8-44df-935a-874408fd97aa'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: footerbottomextreme
+theme: corporateclean
+region: sub_footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:684d67c4-d7a8-44df-935a-874408fd97aa'
+settings:
+  id: 'block_content:684d67c4-d7a8-44df-935a-874408fd97aa'
+  label: 'Footer bottom extreme'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

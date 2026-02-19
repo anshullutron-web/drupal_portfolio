@@ -1,0 +1,25 @@
+uuid: d49547a0-38f7-421a-9c13-a222de6700d5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:95e05e1c-70c3-49c4-a724-33afb42343cc'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: recentworks
+theme: corporateclean
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:95e05e1c-70c3-49c4-a724-33afb42343cc'
+settings:
+  id: 'block_content:95e05e1c-70c3-49c4-a724-33afb42343cc'
+  label: 'Recent works'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

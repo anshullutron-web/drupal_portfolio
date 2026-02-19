@@ -1,0 +1,25 @@
+uuid: dc9d24e8-1821-42be-968c-6366afae6a14
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d571711e-e291-4ec6-8313-96fa34929ffc'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: ourteam
+theme: corporateclean
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:d571711e-e291-4ec6-8313-96fa34929ffc'
+settings:
+  id: 'block_content:d571711e-e291-4ec6-8313-96fa34929ffc'
+  label: 'Our Team'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

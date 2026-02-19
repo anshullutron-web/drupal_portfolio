@@ -1,0 +1,25 @@
+uuid: 03579d0f-3595-4ecb-9f97-da419909b474
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e9f18b1e-a37a-4cb0-b2c6-fdd6f6c4fab8'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: ourservicesparagraphs
+theme: corporateclean
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:e9f18b1e-a37a-4cb0-b2c6-fdd6f6c4fab8'
+settings:
+  id: 'block_content:e9f18b1e-a37a-4cb0-b2c6-fdd6f6c4fab8'
+  label: 'Our services (paragraphs)'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

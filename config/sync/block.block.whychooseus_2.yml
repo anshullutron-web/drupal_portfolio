@@ -1,0 +1,25 @@
+uuid: 4e939a9a-c9ab-4ade-b524-6199d50ff62d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:50670652-ee97-4a58-a571-69e308e081f4'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: whychooseus_2
+theme: corporateclean
+region: hero_first
+weight: -7
+provider: null
+plugin: 'block_content:50670652-ee97-4a58-a571-69e308e081f4'
+settings:
+  id: 'block_content:50670652-ee97-4a58-a571-69e308e081f4'
+  label: 'Why Choose us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

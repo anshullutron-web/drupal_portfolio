@@ -1,0 +1,30 @@
+# Drupal core (installed via composer)
+web/core/
+
+# Contrib modules/themes (installed via composer)
+web/modules/contrib/
+web/themes/contrib/
+
+# Dependencies
+vendor/
+node_modules/
+
+# Drupal generated files
+web/sites/*/files/
+web/sites/*/private/
+
+# Local settings (secrets)
+web/sites/*/settings.local.php
+web/sites/*/services.local.yml
+
+# Logs / temp
+*.log
+tmp/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

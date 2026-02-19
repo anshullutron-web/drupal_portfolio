@@ -1,0 +1,25 @@
+uuid: 2b97b062-0956-4a7d-a761-eb4e870b1510
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a17ea64d-0fcd-4abe-8c67-9caaa6a534ef'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: topbar
+theme: corporateclean
+region: header_top_highlighted_first
+weight: -7
+provider: null
+plugin: 'block_content:a17ea64d-0fcd-4abe-8c67-9caaa6a534ef'
+settings:
+  id: 'block_content:a17ea64d-0fcd-4abe-8c67-9caaa6a534ef'
+  label: Topbar
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

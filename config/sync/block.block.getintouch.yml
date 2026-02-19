@@ -1,0 +1,25 @@
+uuid: e03d66e5-2a78-4c74-a719-fe81711084fd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d205e0de-3666-49b4-a193-643f12b8db7d'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: getintouch
+theme: corporateclean
+region: sub_featured
+weight: 0
+provider: null
+plugin: 'block_content:d205e0de-3666-49b4-a193-643f12b8db7d'
+settings:
+  id: 'block_content:d205e0de-3666-49b4-a193-643f12b8db7d'
+  label: 'Get in touch'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

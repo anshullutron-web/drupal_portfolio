@@ -1,0 +1,25 @@
+uuid: 56cc05e5-9163-452c-9da0-ffc0f1e403d4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:53365463-9535-4b3e-bf41-d0755d528444'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: pricingplans
+theme: corporateclean
+region: content_bottom_highlighted
+weight: 0
+provider: null
+plugin: 'block_content:53365463-9535-4b3e-bf41-d0755d528444'
+settings:
+  id: 'block_content:53365463-9535-4b3e-bf41-d0755d528444'
+  label: 'Pricing plans'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 8100a1df-a7a4-4f3c-9a19-49df3c9d0a3d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3adcf260-2ea5-476a-9d1c-051363202d75'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: ourblogviews
+theme: corporateclean
+region: featured
+weight: 0
+provider: null
+plugin: 'block_content:3adcf260-2ea5-476a-9d1c-051363202d75'
+settings:
+  id: 'block_content:3adcf260-2ea5-476a-9d1c-051363202d75'
+  label: 'Our Blog (views)'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

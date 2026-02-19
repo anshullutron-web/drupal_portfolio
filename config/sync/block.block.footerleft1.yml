@@ -1,0 +1,25 @@
+uuid: af776827-ae86-4746-9816-2e8119d86602
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e029e942-291b-44c4-aecf-ebc57fc7bfda'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: footerleft1
+theme: corporateclean
+region: footer_first
+weight: -7
+provider: null
+plugin: 'block_content:e029e942-291b-44c4-aecf-ebc57fc7bfda'
+settings:
+  id: 'block_content:e029e942-291b-44c4-aecf-ebc57fc7bfda'
+  label: 'Footer left1'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

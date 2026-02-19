@@ -1,0 +1,25 @@
+uuid: ca51584f-b63d-46b2-bdea-23d6eee9133e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8a655726-b837-4f09-925b-3ea0957a7d2f'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: ourskills
+theme: corporateclean
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:8a655726-b837-4f09-925b-3ea0957a7d2f'
+settings:
+  id: 'block_content:8a655726-b837-4f09-925b-3ea0957a7d2f'
+  label: 'Our skills'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

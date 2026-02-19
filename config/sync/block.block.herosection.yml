@@ -1,0 +1,25 @@
+uuid: 59a6a983-83c7-4f9a-9d3e-ae3b0d5b9c3d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a50f361b-e1b1-457a-8b7a-04b084c1d91f'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: herosection
+theme: corporateclean
+region: hero_top
+weight: -6
+provider: null
+plugin: 'block_content:a50f361b-e1b1-457a-8b7a-04b084c1d91f'
+settings:
+  id: 'block_content:a50f361b-e1b1-457a-8b7a-04b084c1d91f'
+  label: 'Hero section'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

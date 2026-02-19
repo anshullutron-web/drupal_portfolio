@@ -1,0 +1,25 @@
+uuid: a93c4493-dd1e-4085-b4eb-9f7c8f2b5a9e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f127a5fe-a6a8-4f62-aa7a-eca3e4446ebe'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: customerreviewpictures
+theme: corporateclean
+region: content_bottom_second
+weight: 0
+provider: null
+plugin: 'block_content:f127a5fe-a6a8-4f62-aa7a-eca3e4446ebe'
+settings:
+  id: 'block_content:f127a5fe-a6a8-4f62-aa7a-eca3e4446ebe'
+  label: 'Customer Review pictures'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

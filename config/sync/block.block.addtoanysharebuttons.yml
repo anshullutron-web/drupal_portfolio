@@ -1,0 +1,25 @@
+uuid: d3878986-1236-4193-ac1f-68a0d1afcf35
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - corporateclean
+id: addtoanysharebuttons
+theme: corporateclean
+region: footer_bottom_first
+weight: 0
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'AddToAny share buttons'
+  label_display: '0'
+  provider: addtoany
+  context_mapping: {  }
+  buttons_size: null
+  addtoany_html: ''
+  link_url: ''
+  link_title: ''
+visibility: {  }
