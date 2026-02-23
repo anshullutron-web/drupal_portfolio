@@ -1,0 +1,8 @@
+uuid: edaa5ae3-1e79-4c21-a6c8-9d96dff60152
+langcode: en
+status: true
+dependencies: {  }
+id: primary_card
+label: 'Primary card'
+revision: false
+description: null

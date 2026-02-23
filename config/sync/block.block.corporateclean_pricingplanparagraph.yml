@@ -1,0 +1,25 @@
+uuid: cb6f25aa-e028-4eef-aed1-82211b95760d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:primary_card:0843b808-39c3-4345-a70d-7b097cdf1b86'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: corporateclean_pricingplanparagraph
+theme: corporateclean
+region: content_bottom_highlighted
+weight: 0
+provider: null
+plugin: 'block_content:0843b808-39c3-4345-a70d-7b097cdf1b86'
+settings:
+  id: 'block_content:0843b808-39c3-4345-a70d-7b097cdf1b86'
+  label: 'Pricing Plan (paragraph)'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

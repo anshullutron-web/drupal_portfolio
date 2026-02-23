@@ -1,0 +1,25 @@
+uuid: 959a9822-1795-4ed7-9579-54e9b98a14d8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact:df538106-6ad7-462a-940e-9060989f1c27'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: corporateclean_contactparagraphs
+theme: corporateclean
+region: sub_featured
+weight: 0
+provider: null
+plugin: 'block_content:df538106-6ad7-462a-940e-9060989f1c27'
+settings:
+  id: 'block_content:df538106-6ad7-462a-940e-9060989f1c27'
+  label: 'Contact (paragraphs)'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

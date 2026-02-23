@@ -1,0 +1,33 @@
+uuid: 01da7efb-3344-4a7a-babd-576a71eeed39
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.our_skills
+    - field.field.block_content.our_skills.body
+    - field.field.block_content.our_skills.field_our_skills_progress_bar
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.our_skills.default
+targetEntityType: block_content
+bundle: our_skills
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_our_skills_progress_bar:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

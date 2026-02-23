@@ -1,0 +1,24 @@
+uuid: c6a7f778-f3bc-4b2d-aa3f-ed4940733c6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.team
+  module:
+    - views
+  theme:
+    - corporateclean
+id: corporateclean_views_block__team_block_1
+theme: corporateclean
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:team-block_1'
+settings:
+  id: 'views_block:team-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: '3'
+visibility: {  }

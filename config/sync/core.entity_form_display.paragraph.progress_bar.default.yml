@@ -1,0 +1,39 @@
+uuid: 3cc97cd5-8af1-4d58-af0f-d416abcb22ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.progress_bar.field_progress_bar_number
+    - field.field.paragraph.progress_bar.field_title
+    - paragraphs.paragraphs_type.progress_bar
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.progress_bar.default
+targetEntityType: paragraph
+bundle: progress_bar
+mode: default
+content:
+  field_progress_bar_number:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

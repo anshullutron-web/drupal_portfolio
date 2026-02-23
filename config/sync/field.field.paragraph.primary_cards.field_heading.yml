@@ -1,0 +1,19 @@
+uuid: 2c0be6f4-669d-46bf-8a24-b3ecd49736f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.primary_cards
+id: paragraph.primary_cards.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: primary_cards
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

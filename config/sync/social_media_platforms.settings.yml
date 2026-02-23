@@ -1,5 +1,6 @@
 _core:
   default_config_hash: YGeaxflZ7ZhaKclOWZw7rfOgrLc1LHAOKb1OTZm3mZY
+langcode: en
 display_options:
   show_icon: true
   show_label: false
@@ -9,23 +10,23 @@ platforms:
     label: Facebook
     url: null
     weight: 0
-  youtube:
-    label: Youtube
-    url: null
-    weight: 1
-  linkedin:
-    label: Linkedin
-    url: null
-    weight: 2
-  x:
-    label: X
-    url: null
-    weight: 3
   instagram:
     label: Instagram
     url: null
     weight: 4
+  linkedin:
+    label: Linkedin
+    url: null
+    weight: 2
   pinterest:
     label: Pinterest
     url: null
     weight: 5
+  x:
+    label: X
+    url: null
+    weight: 3
+  youtube:
+    label: Youtube
+    url: null
+    weight: 1

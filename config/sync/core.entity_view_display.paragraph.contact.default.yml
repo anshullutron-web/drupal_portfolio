@@ -1,0 +1,39 @@
+uuid: 1f2689f0-6141-46d7-823c-20a1be7d845f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact.field_addtess
+    - field.field.paragraph.contact.field_contact_icon
+    - field.field.paragraph.contact.field_contact_title
+    - paragraphs.paragraphs_type.contact
+id: paragraph.contact.default
+targetEntityType: paragraph
+bundle: contact
+mode: default
+content:
+  field_addtess:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_contact_icon:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_contact_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

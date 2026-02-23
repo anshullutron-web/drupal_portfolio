@@ -1,0 +1,43 @@
+uuid: 11142701-1926-49e2-a15b-68f8f8bfc200
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.customer_review_paragraphs
+    - field.storage.block_content.field_customer_review
+    - paragraphs.paragraphs_type.tertiary_cards
+  module:
+    - entity_reference_revisions
+id: block_content.customer_review_paragraphs.field_customer_review
+field_name: field_customer_review
+entity_type: block_content
+bundle: customer_review_paragraphs
+label: 'Customer review'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tertiary_cards: tertiary_cards
+    negate: 0
+    target_bundles_drag_drop:
+      progress_bar:
+        weight: 6
+        enabled: false
+      secondary_card:
+        weight: 7
+        enabled: false
+      services:
+        weight: 8
+        enabled: false
+      stats:
+        weight: 9
+        enabled: false
+      tertiary_cards:
+        weight: 10
+        enabled: true
+field_type: entity_reference_revisions

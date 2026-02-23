@@ -1,0 +1,19 @@
+uuid: f8f456cb-533e-4d0d-9aba-05493dc56d97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stats_subtitle
+    - paragraphs.paragraphs_type.stats
+id: paragraph.stats.field_stats_subtitle
+field_name: field_stats_subtitle
+entity_type: paragraph
+bundle: stats
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

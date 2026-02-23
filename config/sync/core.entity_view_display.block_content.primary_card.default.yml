@@ -1,0 +1,33 @@
+uuid: 88b50b06-03c8-4ebb-bfdb-d8fd27d9b58a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.primary_card
+    - field.field.block_content.primary_card.body
+    - field.field.block_content.primary_card.field_primary_card
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.primary_card.default
+targetEntityType: block_content
+bundle: primary_card
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_primary_card:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

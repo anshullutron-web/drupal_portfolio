@@ -1,0 +1,10 @@
+uuid: 4e3a11d6-ac4c-4cdd-9de6-e07c0a3a6d61
+langcode: en
+status: true
+dependencies: {  }
+id: secondary_card
+label: 'Secondary Card'
+icon_uuid: null
+icon_default: null
+description: 'Green cards with radius hover functionality'
+behavior_plugins: {  }

@@ -1,0 +1,8 @@
+uuid: 3108cd67-a40f-4746-b2d2-d50f3a63c9af
+langcode: en
+status: true
+dependencies: {  }
+id: secondary_card
+label: 'Secondary Card'
+revision: false
+description: 'Green cards'

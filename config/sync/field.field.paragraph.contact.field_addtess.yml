@@ -1,0 +1,19 @@
+uuid: e8bcbd5c-29f4-43bf-bae4-03940aa21a3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_addtess
+    - paragraphs.paragraphs_type.contact
+id: paragraph.contact.field_addtess
+field_name: field_addtess
+entity_type: paragraph
+bundle: contact
+label: description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,10 @@
+uuid: ca73e48e-103d-416f-a937-50e7667972aa
+langcode: en
+status: true
+dependencies: {  }
+id: tertiary_cards
+label: 'Tertiary cards'
+icon_uuid: null
+icon_default: null
+description: 'For Testimonials'
+behavior_plugins: {  }

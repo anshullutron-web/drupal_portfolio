@@ -1,0 +1,8 @@
+uuid: 60542bc9-9639-4fa4-b59a-6c0d4d48a65a
+langcode: en
+status: true
+dependencies: {  }
+id: our_skills
+label: 'Our skills'
+revision: false
+description: 'with progress bar'

@@ -11,7 +11,7 @@ dependencies:
 id: recentworks
 theme: corporateclean
 region: content_top
-weight: 0
+weight: -14
 provider: null
 plugin: 'block_content:95e05e1c-70c3-49c4-a724-33afb42343cc'
 settings:

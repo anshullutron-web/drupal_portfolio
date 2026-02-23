@@ -1,0 +1,24 @@
+uuid: 47f7c3bf-f87e-4d83-a8f7-ebf71a04fea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.customer_review_paragraphs
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.customer_review_paragraphs.body
+field_name: body
+entity_type: block_content
+bundle: customer_review_paragraphs
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

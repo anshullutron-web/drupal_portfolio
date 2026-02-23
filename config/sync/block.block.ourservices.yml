@@ -1,0 +1,25 @@
+uuid: fff47d89-8f00-4546-bf4e-e8c11c661d6b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:services_section:56acd369-ffbe-4dc2-aa86-cbe6ff2f3bc5'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: ourservices
+theme: corporateclean
+region: content_top
+weight: -13
+provider: null
+plugin: 'block_content:56acd369-ffbe-4dc2-aa86-cbe6ff2f3bc5'
+settings:
+  id: 'block_content:56acd369-ffbe-4dc2-aa86-cbe6ff2f3bc5'
+  label: 'Our Services'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

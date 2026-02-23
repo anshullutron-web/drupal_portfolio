@@ -1,0 +1,23 @@
+uuid: 35f8542c-ecd9-40fd-9f81-b224608e0731
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.services.field_service_grid_para
+    - node.type.services
+  module:
+    - user
+id: node.services.teaser
+targetEntityType: node
+bundle: services
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_service_grid_para: true

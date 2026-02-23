@@ -1,0 +1,29 @@
+uuid: ab2cac46-5f9d-4067-8b14-759186174cbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_secondary_icon
+    - media.type.image
+    - paragraphs.paragraphs_type.secondary_card
+id: paragraph.secondary_card.field_secondary_icon
+field_name: field_secondary_icon
+entity_type: paragraph
+bundle: secondary_card
+label: 'Secondary Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 86e62933-8170-4365-b8d3-f193698c925a
+langcode: en
+status: true
+dependencies: {  }
+id: customer_review_paragraphs
+label: 'Customer Review (paragraphs)'
+revision: false
+description: null

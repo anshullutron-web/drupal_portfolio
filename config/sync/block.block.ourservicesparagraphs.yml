@@ -1,6 +1,6 @@
 uuid: 03579d0f-3595-4ecb-9f97-da419909b474
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:e9f18b1e-a37a-4cb0-b2c6-fdd6f6c4fab8'
@@ -11,7 +11,7 @@ dependencies:
 id: ourservicesparagraphs
 theme: corporateclean
 region: content_top
-weight: 0
+weight: -12
 provider: null
 plugin: 'block_content:e9f18b1e-a37a-4cb0-b2c6-fdd6f6c4fab8'
 settings:

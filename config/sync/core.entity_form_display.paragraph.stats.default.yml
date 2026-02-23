@@ -1,0 +1,48 @@
+uuid: 21412185-aa11-413b-bb9d-4ee5334e6657
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stats.field_stats_icon
+    - field.field.paragraph.stats.field_stats_number
+    - field.field.paragraph.stats.field_stats_subtitle
+    - paragraphs.paragraphs_type.stats
+  module:
+    - field_layout
+    - layout_discovery
+    - media_library
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.stats.default
+targetEntityType: paragraph
+bundle: stats
+mode: default
+content:
+  field_stats_icon:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_stats_number:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_stats_subtitle:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

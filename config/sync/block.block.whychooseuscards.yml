@@ -1,6 +1,6 @@
 uuid: 9afc6fa4-ec58-4d93-91c2-7d301f9ce5f8
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:b7e11d1f-a106-4706-96a6-18bafdc1f21d'
@@ -11,7 +11,7 @@ dependencies:
 id: whychooseuscards
 theme: corporateclean
 region: hero_third
-weight: -7
+weight: -14
 provider: null
 plugin: 'block_content:b7e11d1f-a106-4706-96a6-18bafdc1f21d'
 settings:

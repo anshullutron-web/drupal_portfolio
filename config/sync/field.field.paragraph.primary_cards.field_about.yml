@@ -1,0 +1,19 @@
+uuid: 89110dc5-4e4a-413b-a423-d7ea1939d363
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about
+    - paragraphs.paragraphs_type.primary_cards
+id: paragraph.primary_cards.field_about
+field_name: field_about
+entity_type: paragraph
+bundle: primary_cards
+label: About
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

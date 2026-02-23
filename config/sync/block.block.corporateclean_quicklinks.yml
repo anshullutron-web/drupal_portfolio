@@ -1,0 +1,25 @@
+uuid: 7bea066f-37e5-4863-a574-8ae073b72e23
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.quick-links
+  module:
+    - system
+  theme:
+    - corporateclean
+id: corporateclean_quicklinks
+theme: corporateclean
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:quick-links'
+settings:
+  id: 'system_menu_block:quick-links'
+  label: 'Quick Links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

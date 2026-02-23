@@ -1,0 +1,49 @@
+uuid: 32746766-bf05-4c14-a9a1-116bc6a385a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact.field_addtess
+    - field.field.paragraph.contact.field_contact_icon
+    - field.field.paragraph.contact.field_contact_title
+    - paragraphs.paragraphs_type.contact
+  module:
+    - field_layout
+    - layout_discovery
+    - media_library
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.contact.default
+targetEntityType: paragraph
+bundle: contact
+mode: default
+content:
+  field_addtess:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_icon:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_contact_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

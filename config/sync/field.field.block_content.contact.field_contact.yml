@@ -1,0 +1,46 @@
+uuid: e3db14ef-c1c3-4037-8d52-1ec1ddc731e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact
+    - field.storage.block_content.field_contact
+    - paragraphs.paragraphs_type.contact
+  module:
+    - entity_reference_revisions
+id: block_content.contact.field_contact
+field_name: field_contact
+entity_type: block_content
+bundle: contact
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      contact: contact
+    negate: 0
+    target_bundles_drag_drop:
+      contact:
+        weight: 7
+        enabled: true
+      progress_bar:
+        weight: 8
+        enabled: false
+      secondary_card:
+        weight: 9
+        enabled: false
+      services:
+        weight: 10
+        enabled: false
+      stats:
+        weight: 11
+        enabled: false
+      tertiary_cards:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

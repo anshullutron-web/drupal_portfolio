@@ -1,0 +1,29 @@
+uuid: 08f3c893-1594-4c35-88c5-ac99f5dc447e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_icon
+    - media.type.image
+    - paragraphs.paragraphs_type.contact
+id: paragraph.contact.field_contact_icon
+field_name: field_contact_icon
+entity_type: paragraph
+bundle: contact
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

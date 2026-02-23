@@ -1,0 +1,37 @@
+uuid: b116982b-cbbe-4e91-95a9-0f09e7024dce
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.our_skills
+    - field.storage.block_content.field_our_skills_progress_bar
+    - paragraphs.paragraphs_type.progress_bar
+  module:
+    - entity_reference_revisions
+id: block_content.our_skills.field_our_skills_progress_bar
+field_name: field_our_skills_progress_bar
+entity_type: block_content
+bundle: our_skills
+label: 'Our skills progress bar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      progress_bar: progress_bar
+    negate: 0
+    target_bundles_drag_drop:
+      progress_bar:
+        weight: 4
+        enabled: true
+      secondary_card:
+        weight: 5
+        enabled: false
+      services:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

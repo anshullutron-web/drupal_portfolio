@@ -1,0 +1,25 @@
+uuid: bf1163e4-c05e-4a0d-b6d1-4c9426576473
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:secondary_card:196b3af0-dbe7-47fa-a99a-4e44dbecbb33'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: corporateclean_whychooseuscardparagraphs
+theme: corporateclean
+region: hero_third
+weight: -16
+provider: null
+plugin: 'block_content:196b3af0-dbe7-47fa-a99a-4e44dbecbb33'
+settings:
+  id: 'block_content:196b3af0-dbe7-47fa-a99a-4e44dbecbb33'
+  label: 'Why choose us card (paragraphs)'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

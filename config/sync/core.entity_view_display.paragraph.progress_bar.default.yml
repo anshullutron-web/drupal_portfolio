@@ -1,0 +1,31 @@
+uuid: a9dcd6ef-6f69-4377-96c3-bfac62ebbab1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.progress_bar.field_progress_bar_number
+    - field.field.paragraph.progress_bar.field_title
+    - paragraphs.paragraphs_type.progress_bar
+id: paragraph.progress_bar.default
+targetEntityType: paragraph
+bundle: progress_bar
+mode: default
+content:
+  field_progress_bar_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

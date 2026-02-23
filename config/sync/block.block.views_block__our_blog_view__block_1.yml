@@ -1,0 +1,24 @@
+uuid: db8e6ded-58bf-4036-abb0-9e6293c59d50
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.our_blog_view_
+  module:
+    - views
+  theme:
+    - corporateclean
+id: views_block__our_blog_view__block_1
+theme: corporateclean
+region: featured
+weight: 0
+provider: null
+plugin: 'views_block:our_blog_view_-block_1'
+settings:
+  id: 'views_block:our_blog_view_-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: 89b3b85b-9ab4-476a-a530-99bd5d2774f0
+langcode: en
+status: true
+dependencies: {  }
+id: primary_cards
+label: 'Primary cards'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

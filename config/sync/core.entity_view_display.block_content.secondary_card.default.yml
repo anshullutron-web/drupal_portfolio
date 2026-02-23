@@ -1,0 +1,24 @@
+uuid: 61809e80-236a-48a9-a415-4bfd597ec8d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.secondary_card
+    - field.field.block_content.secondary_card.field_secondary_card
+  module:
+    - entity_reference_revisions
+id: block_content.secondary_card.default
+targetEntityType: block_content
+bundle: secondary_card
+mode: default
+content:
+  field_secondary_card:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

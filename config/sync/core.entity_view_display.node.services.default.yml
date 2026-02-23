@@ -1,0 +1,31 @@
+uuid: f9776c15-2ae1-43d0-9920-97ffbb662fdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.services.field_service_grid_para
+    - node.type.services
+  module:
+    - entity_reference_revisions
+    - user
+id: node.services.default
+targetEntityType: node
+bundle: services
+mode: default
+content:
+  field_service_grid_para:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  addtoany: true

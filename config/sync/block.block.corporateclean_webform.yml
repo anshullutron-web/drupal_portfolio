@@ -1,0 +1,26 @@
+uuid: 091c450e-7cb4-4202-818b-b59eefd004e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contact_us
+  module:
+    - webform
+  theme:
+    - corporateclean
+id: corporateclean_webform
+theme: corporateclean
+region: highlighted
+weight: -15
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: contact_us
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility: {  }

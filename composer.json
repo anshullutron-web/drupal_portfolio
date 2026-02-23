@@ -25,6 +25,7 @@
         "drupal/gin": "^4.0",
         "drupal/paragraphs": "^1.17",
         "drupal/social_media_platforms": "^1.0",
+        "drupal/webform": "^6.2",
         "drush/drush": "^12.5"
     },
     "conflict": {
