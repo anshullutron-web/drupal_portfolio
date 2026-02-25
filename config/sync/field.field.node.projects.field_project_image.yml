@@ -1,0 +1,29 @@
+uuid: 1117f7e1-a5d7-4779-83f2-55d0a3a7e6e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_image
+    - media.type.image
+    - node.type.projects
+id: node.projects.field_project_image
+field_name: field_project_image
+entity_type: node
+bundle: projects
+label: Project_image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

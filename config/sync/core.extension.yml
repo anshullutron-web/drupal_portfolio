@@ -34,6 +34,7 @@ module:
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
   mysql: 0
   node: 0
   options: 0
@@ -41,13 +42,17 @@ module:
   path: 0
   path_alias: 0
   phpass: 0
+  redirect: 0
   responsive_image: 0
+  schema_metatag: 0
   search: 0
   shortcut: 0
+  simple_sitemap: 0
   social_media_platforms: 0
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
@@ -55,6 +60,7 @@ module:
   views_ui: 0
   webform: 0
   webform_ui: 0
+  pathauto: 1
   views: 10
   paragraphs: 11
   standard: 1000

@@ -1,0 +1,11 @@
+uuid: 9957189a-b2cb-4328-b4f3-58f2878edeb4
+langcode: en
+status: true
+dependencies: {  }
+id: node__blog
+label: 'Content: Blog'
+tags:
+  abstract: "Welcome to my portfolio blog, where I share insights on web development, Drupal development, SEO strategies, and career growth in the tech industry. This blog highlights real-world projects, problem-solving techniques, frontend and backend development practices, and practical digital marketing knowledge. I write about website optimization, responsive design, content management systems, and performance improvement to help businesses and professionals grow online. Each article is designed to provide actionable tips, technical guidance, and industry trends that improve skills and digital presence. Whether you're looking for Drupal tutorials, SEO best practices, or professional development advice, this blog delivers value-driven, search-friendly content. My goal is to build scalable, optimized, and user-focused digital solutions while continuously learning and sharing knowledge."
+  description: 'This page is for blogs. All the blogs created by any user will be visible on this page.'
+  keywords: 'web development blog, Drupal blog, Drupal tutorials, Drupal 10 blog, web developer blog, frontend development blog, backend development blog, full stack development blog, SEO blog, technical SEO blog, website optimization blog, CMS blog, content management system blog, coding tutorials blog, PHP blog, MySQL blog, HTML CSS JavaScript blog, responsive web design blog, digital marketing blog, SEO best practices blog, on page SEO tips, off page SEO tips, page speed optimization tips, website performance tips, Google ranking tips, developer portfolio blog, programming blog, tech blog India, web development tips, career growth in tech, software development blog, UI UX blog, web design blog, learning web development, beginner web development guide, advanced Drupal guide, problem solving in development, project case studies blog, industry trends in web development'
+  title: 'Our Blogs'

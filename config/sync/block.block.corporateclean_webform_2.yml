@@ -1,0 +1,26 @@
+uuid: 3b554ad8-05d6-44e4-b787-0a083e7663ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.subscribe_now
+  module:
+    - webform
+  theme:
+    - corporateclean
+id: corporateclean_webform_2
+theme: corporateclean
+region: featured_bottom
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: subscribe_now
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility: {  }
