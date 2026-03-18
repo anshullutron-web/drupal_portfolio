@@ -1,0 +1,161 @@
+.team{
+  padding:100px 0;
+  text-align:center;
+}
+
+/* HEADER */
+
+.team-header{
+  margin-bottom:60px;
+
+  h2{
+    font-size:48px;
+    margin-bottom:10px;
+  }
+
+  p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+  }
+}
+
+/* GRID */
+
+.team-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+}
+
+/* CARD */
+
+.team-card{
+  position:relative;
+  overflow:hidden;
+}
+
+/* IMAGE */
+
+.team-image{
+  position:relative;
+}
+
+.team-image img{
+  width:100%;
+  display:block;
+}
+
+/* OVERLAY */
+
+.team-overlay{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition:.5s;
+  z-index:2;
+}
+
+/* CURVED SHAPES */
+
+.team-overlay::before,
+.team-overlay::after{
+  content:"";
+  position:absolute;
+  width:130%;
+  height:130%;
+  background:rgba(22,160,133,0.75); /* slightly more transparent */
+  border-radius:50%;
+  transition:.6s;
+  z-index:1; /* below text & icons */
+}
+
+/* TOP SHAPE */
+
+.team-overlay::before{
+  top:-110%;
+  left:-60%;
+}
+
+/* BOTTOM SHAPE */
+
+.team-overlay::after{
+  bottom:-110%;
+  right:-60%;
+}
+
+/* HOVER */
+
+.team-card:hover .team-overlay{
+  opacity:1;
+}
+
+.team-card:hover .team-overlay::before{
+  top:-40%;
+}
+
+.team-card:hover .team-overlay::after{
+  bottom:-40%;
+}
+
+/* TEXT TOP LEFT */
+
+.team-overlay .team-info{
+  position:absolute;
+  top:40px;
+  left:40px;
+  color:white;
+  z-index:3; /* above green overlay */
+}
+
+.team-overlay h3{
+  font-size:26px;
+  font-weight:700;
+  margin-bottom:5px;
+}
+
+.team-overlay span{
+  font-style:italic;
+  font-size:18px;
+}
+
+/* SOCIALS BOTTOM RIGHT */
+
+.team-social{
+  position:absolute;
+  bottom:35px;
+  right:35px;
+  display:flex;
+  gap:15px;
+  z-index:3; /* above overlay */
+}
+
+/* ICON STYLE */
+
+.team-social a{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  background:white;
+  color:#333;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:18px;
+  transition:.3s;
+}
+
+.team-social i{
+  font-size:18px;
+}
+
+/* HOVER LIKE IMAGE */
+
+.team-social a:hover{
+  background:#333;
+  color:white;
+}

@@ -1,0 +1,25 @@
+uuid: df4db91b-c418-47a9-aefe-355b1343c81f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:contact:df538106-6ad7-462a-940e-9060989f1c27'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_contactparagraphs
+theme: portfoliolite
+region: contact
+weight: -17
+provider: null
+plugin: 'block_content:df538106-6ad7-462a-940e-9060989f1c27'
+settings:
+  id: 'block_content:df538106-6ad7-462a-940e-9060989f1c27'
+  label: 'Contact (paragraphs)'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

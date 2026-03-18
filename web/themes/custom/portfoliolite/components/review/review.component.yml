@@ -1,0 +1,11 @@
+name: Customer Review
+description: Customer testimonial slider
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    description:
+      type: string
+    reviews:
+      type: array

@@ -1,0 +1,10 @@
+$schema: https://drupal.org/schemas/core/components/component.schema.json
+
+name: Topbar
+description: Portfolio Lite topbar
+
+props:
+  type: object
+  properties:
+    content:
+      type: string

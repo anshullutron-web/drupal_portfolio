@@ -1,0 +1,8 @@
+name: Contact
+description: Contact information section
+
+props:
+  type: object
+  properties:
+    contacts:
+      type: array

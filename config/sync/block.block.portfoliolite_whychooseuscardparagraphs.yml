@@ -1,0 +1,25 @@
+uuid: 65a2a400-86cd-4a55-b592-7265d5d39515
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:secondary_card:196b3af0-dbe7-47fa-a99a-4e44dbecbb33'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_whychooseuscardparagraphs
+theme: portfoliolite
+region: why
+weight: -16
+provider: null
+plugin: 'block_content:196b3af0-dbe7-47fa-a99a-4e44dbecbb33'
+settings:
+  id: 'block_content:196b3af0-dbe7-47fa-a99a-4e44dbecbb33'
+  label: 'Why choose us card (paragraphs)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

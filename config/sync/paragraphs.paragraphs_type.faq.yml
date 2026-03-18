@@ -1,0 +1,10 @@
+uuid: 7e25c9a3-a2d1-4e73-b263-5f76fe618b66
+langcode: en
+status: true
+dependencies: {  }
+id: faq
+label: faq
+icon_uuid: null
+icon_default: null
+description: 'for get in touch'
+behavior_plugins: {  }

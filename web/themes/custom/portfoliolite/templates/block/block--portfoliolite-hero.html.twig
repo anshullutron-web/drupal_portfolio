@@ -1,0 +1,15 @@
+{% include '@portfoliolite/components/hero/hero.twig' with {
+
+  tag: content.field_superscript['#items'].0.value,
+
+  title: content.field_hero_title['#items'].0.value,
+
+  description: '',
+
+  button_primary_text: content.field_button['#items'].0.title,
+  button_primary_url: content.field_button['#items'].0.url.toString(),
+
+  button_secondary_text: content.field_primary_button['#items'].0.title,
+  button_secondary_url: content.field_primary_button['#items'].0.url.toString()
+
+} %}

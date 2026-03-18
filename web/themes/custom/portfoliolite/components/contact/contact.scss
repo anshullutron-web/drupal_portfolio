@@ -1,0 +1,178 @@
+/* =================================
+   CONTACT SECTION (WRAPPER)
+================================= */
+
+.contact {
+  padding: 120px 0;
+  background: #f7f7f7;
+}
+
+/* CENTER CONTENT */
+.contact .getintouch {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =================================
+   HEADER
+================================= */
+
+.getintouch-header {
+  text-align: center;
+  margin-bottom: 70px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.getintouch-header h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.getintouch-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* =================================
+   MAIN GRID (FIXED)
+================================= */
+
+.getintouch-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr; /* LEFT bigger, RIGHT smaller */
+  gap: 60px;
+  align-items: start;
+}
+
+/* =================================
+   FAQ
+================================= */
+
+.getintouch-faq h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.faq-item {
+  background: #e9e9e9;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+/* QUESTION */
+
+.faq-question {
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ICON */
+
+.faq-icon {
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+/* ANSWER */
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  padding: 0 25px;
+}
+
+.faq-answer p {
+  padding: 20px 0;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ACTIVE */
+
+.faq-item.active {
+  background: #f1f1f1;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* =================================
+   FORM (RIGHT SIDE FIXED)
+================================= */
+
+.getintouch-form {
+  background: #efefef;
+  padding: 30px;
+  border-radius: 10px;
+
+  max-width: 480px;   /* control width */
+  width: 100%;
+  margin-left: auto;  /* push to right */
+}
+
+/* INPUTS */
+
+.getintouch-form input,
+.getintouch-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  background: #f7f7f7;
+}
+
+.getintouch-form textarea {
+  min-height: 130px;
+  resize: none;
+}
+
+/* BUTTON */
+
+.getintouch-form button,
+.getintouch-form input[type="submit"] {
+  background: #16a085;
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 992px) {
+  .getintouch-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .getintouch-form {
+    margin: 0 auto;
+  }
+}

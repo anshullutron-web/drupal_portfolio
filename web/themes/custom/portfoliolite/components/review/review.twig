@@ -1,0 +1,55 @@
+{{ attach_library('portfoliolite/review') }}
+
+<section class="review">
+
+  <div class="review-header">
+    <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
+  </div>
+
+  <div class="review-wrapper">
+
+    <!-- LEFT REVIEW CARD -->
+    <div class="review-container">
+
+      <div class="review-slider">
+
+        {% for item in reviews %}
+        <div class="review-slide">
+
+          <div class="review-card">
+
+            <img class="review-avatar"
+                 src="{{ item.image }}"
+                 alt="{{ item.name }}">
+
+            <h3>{{ item.name }}</h3>
+            <span>{{ item.role }}</span>
+
+            <p class="review-text">
+              "{{ item.text }}"
+            </p>
+
+          </div>
+
+        </div>
+        {% endfor %}
+
+      </div>
+
+      <div class="review-dots">
+        {% for item in reviews %}
+          <span class="dot {% if loop.first %}active{% endif %}"></span>
+        {% endfor %}
+      </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="review-shape">
+      <img src="{{ shape_image }}" alt="testimonial">
+    </div>
+
+  </div>
+
+</section>

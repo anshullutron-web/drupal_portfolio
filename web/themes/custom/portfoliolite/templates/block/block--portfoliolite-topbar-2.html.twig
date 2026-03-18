@@ -1,0 +1,7 @@
+{% include '@portfoliolite/components/topbar/topbar.twig' with {
+
+  email: content.field_email['#items'].0.value,
+  phone: content.field_phone['#items'].0.value,
+  hours: content.field_open_hours['#items'].0.value
+
+} %}

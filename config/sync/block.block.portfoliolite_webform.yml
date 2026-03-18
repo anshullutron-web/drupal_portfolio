@@ -1,0 +1,26 @@
+uuid: 9801f6af-e734-4cd0-914b-3149ef14de01
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contact_us
+  module:
+    - webform
+  theme:
+    - portfoliolite
+id: portfoliolite_webform
+theme: portfoliolite
+region: contact
+weight: -18
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: contact_us
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility: {  }

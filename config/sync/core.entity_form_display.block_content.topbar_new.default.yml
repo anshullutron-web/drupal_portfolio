@@ -1,0 +1,85 @@
+uuid: 53762b58-6c87-440b-814c-1fda84de6e98
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.topbar_new
+    - field.field.block_content.topbar_new.field_email
+    - field.field.block_content.topbar_new.field_email_photo
+    - field.field.block_content.topbar_new.field_open_hours
+    - field.field.block_content.topbar_new.field_open_hours_photo
+    - field.field.block_content.topbar_new.field_phone
+    - field.field.block_content.topbar_new.field_phone_photo
+  module:
+    - field_layout
+    - layout_discovery
+    - media_library
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: block_content.topbar_new.default
+targetEntityType: block_content
+bundle: topbar_new
+mode: default
+content:
+  field_email:
+    type: email_default
+    weight: 28
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_email_photo:
+    type: media_library_widget
+    weight: 27
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_open_hours:
+    type: string_textfield
+    weight: 31
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_open_hours_photo:
+    type: media_library_widget
+    weight: 32
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_phone:
+    type: string_textfield
+    weight: 30
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone_photo:
+    type: media_library_widget
+    weight: 29
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

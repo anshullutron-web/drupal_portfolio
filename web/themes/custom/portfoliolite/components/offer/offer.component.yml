@@ -1,0 +1,10 @@
+offer:
+  label: Offer Section
+  description: Offer services section with image and text
+  fields:
+    offer_image:
+      type: render
+      label: Offer Image
+    offer_content:
+      type: render
+      label: Offer Content

@@ -1,0 +1,25 @@
+uuid: b167653e-fb5f-4169-854a-f824d8479799
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_section:d7b4f8a8-4dae-43da-8159-302a0ecb5393'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_hero
+theme: portfoliolite
+region: hero
+weight: -18
+provider: null
+plugin: 'block_content:d7b4f8a8-4dae-43da-8159-302a0ecb5393'
+settings:
+  id: 'block_content:d7b4f8a8-4dae-43da-8159-302a0ecb5393'
+  label: Hero
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

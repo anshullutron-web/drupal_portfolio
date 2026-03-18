@@ -1,0 +1,139 @@
+.getintouch {
+  padding: 120px 0;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+
+.getintouch-header {
+  text-align: center;
+  margin-bottom: 70px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.7;
+  }
+}
+
+/* LAYOUT */
+
+.getintouch-wrapper {
+  max-width: 1100px;   /* reduced from 1200 */
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr; /* form slightly smaller */
+  gap: 50px;
+  align-items: start;
+}
+
+/* FAQ */
+
+.getintouch-faq h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.faq-item {
+  background: #e9e9e9;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+/* QUESTION */
+
+.faq-question {
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ICON */
+
+.faq-icon {
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+/* ANSWER */
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  padding: 0 25px;
+}
+
+.faq-answer p {
+  padding: 20px 0;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ACTIVE STATE */
+
+.faq-item.active {
+  background: #f1f1f1;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* FORM */
+
+.getintouch-form {
+  background: #efefef;
+  padding: 30px;   /* reduced */
+  border-radius: 8px;
+  max-width: 500px; /* NEW */
+}
+
+.getintouch-form input,
+.getintouch-form textarea {
+  padding: 12px;   /* smaller */
+}
+
+.getintouch-form textarea {
+  min-height: 130px; /* reduced */
+}
+
+.getintouch-form button,
+.getintouch-form input[type="submit"] {
+  background: #16a085;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+}
+@media (max-width: 768px) {
+  .contact .contextual-region {
+    grid-template-columns: 1fr;
+  }
+}

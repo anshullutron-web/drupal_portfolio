@@ -1,0 +1,24 @@
+uuid: d69fd805-5acd-4d9e-9885-04368555b325
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects_works
+  module:
+    - views
+  theme:
+    - portfoliolite
+id: portfoliolite_views_block__projects_works_block_1
+theme: portfoliolite
+region: works
+weight: -17
+provider: null
+plugin: 'views_block:projects_works-block_1'
+settings:
+  id: 'views_block:projects_works-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

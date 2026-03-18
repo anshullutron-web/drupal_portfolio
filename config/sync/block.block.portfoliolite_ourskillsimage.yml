@@ -1,0 +1,25 @@
+uuid: 5d367880-1303-4bb2-9d8f-4a610a2fadf5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image_media:2300e0b7-cbad-43ff-9f91-eecbc300fdff'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_ourskillsimage
+theme: portfoliolite
+region: skills
+weight: 0
+provider: null
+plugin: 'block_content:2300e0b7-cbad-43ff-9f91-eecbc300fdff'
+settings:
+  id: 'block_content:2300e0b7-cbad-43ff-9f91-eecbc300fdff'
+  label: 'Our skills  image'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

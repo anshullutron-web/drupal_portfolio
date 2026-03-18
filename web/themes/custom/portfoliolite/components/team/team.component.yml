@@ -1,0 +1,20 @@
+name: Team
+description: Team members section
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    description:
+      type: string
+    members:
+      type: array
+      items:
+        type: object
+        properties:
+          name:
+            type: string
+          role:
+            type: string
+          image:
+            type: string

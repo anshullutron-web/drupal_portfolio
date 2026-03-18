@@ -80,7 +80,7 @@
  *   'database' => 'databasename',
  *   'username' => 'sqlusername',
  *   'password' => 'sqlpassword',
- *   'host' => 'localhost',
+ *   'host' => '127.0.0.1',
  *   'port' => '3306',
  *   'driver' => 'mysql',
  *   'prefix' => '',
@@ -196,7 +196,7 @@ $databases = [];
  *     'database' => 'databasename',
  *     'username' => 'sqlusername',
  *     'password' => 'sqlpassword',
- *     'host' => 'localhost',
+ *     'host' => '127.0.0.1',
  *     'prefix' => '',
  *   ];
  * @endcode
@@ -829,3 +829,10 @@ $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml'
 $config['system.logging']['error_level'] = 'verbose';
 $base_url = 'http://localhost/portfolio/web';
 $settings['config_sync_directory'] = '../config/sync';
+$settings['file_public_path'] = 'sites/default/files';
+$settings['file_temp_path'] = 'sites/default/files/tmp';
+/**
+ * Disable CSS and JS aggregation.
+ */
+$config['system.performance']['css']['preprocess'] = FALSE;
+$config['system.performance']['js']['preprocess'] = FALSE;

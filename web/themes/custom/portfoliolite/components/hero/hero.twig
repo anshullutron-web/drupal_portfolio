@@ -1,0 +1,18 @@
+{{ attach_library('portfoliolite/hero') }}
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <span class="hero-tag">{{ tag }}</span>
+      <h1>{{ title }}</h1>
+      <p>{{ content.body }}</p>
+      <div class="hero-buttons">
+        <a href="{{ button_primary_url }}" class="btn btn-primary">
+          {{ button_primary_text }}
+        </a>
+        <a href="{{ button_secondary_url }}" class="btn btn-outline">
+          {{ button_secondary_text }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

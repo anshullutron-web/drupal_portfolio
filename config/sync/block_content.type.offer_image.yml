@@ -1,0 +1,8 @@
+uuid: d4dc7c3c-7628-44c7-8c4b-7a91d1738667
+langcode: en
+status: true
+dependencies: {  }
+id: offer_image
+label: 'offer Image'
+revision: false
+description: 'images of offer'

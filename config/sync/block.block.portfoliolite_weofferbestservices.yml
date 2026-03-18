@@ -1,0 +1,25 @@
+uuid: 2035d78f-ff37-4517-941b-e4c318ede3a0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e980fdba-0049-487f-9419-77f222377ccc'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_weofferbestservices
+theme: portfoliolite
+region: offer
+weight: -18
+provider: null
+plugin: 'block_content:e980fdba-0049-487f-9419-77f222377ccc'
+settings:
+  id: 'block_content:e980fdba-0049-487f-9419-77f222377ccc'
+  label: 'We offer best services'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

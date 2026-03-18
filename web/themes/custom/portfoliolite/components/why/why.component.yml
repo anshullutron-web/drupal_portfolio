@@ -1,0 +1,35 @@
+$schema: https://drupal.org/schemas/core/components/component.schema.json
+
+name: Why Choose Us
+description: Why choose us section
+
+props:
+  type: object
+
+  properties:
+
+    title:
+      type: string
+
+    description:
+      type: string
+
+    long_text:
+      type: string
+
+    cards:
+      type: array
+
+      items:
+        type: object
+
+        properties:
+
+          icon:
+            type: string
+
+          title:
+            type: string
+
+          description:
+            type: string

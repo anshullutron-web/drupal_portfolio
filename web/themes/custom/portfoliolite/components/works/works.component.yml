@@ -1,0 +1,12 @@
+name: Works
+description: Portfolio works section
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    description:
+      type: string
+    works:
+      type: array

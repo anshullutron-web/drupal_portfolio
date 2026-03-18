@@ -1,0 +1,68 @@
+uuid: bf2c1035-f385-4955-b367-56be1f6c1833
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.topbar_new
+    - field.field.block_content.topbar_new.field_email
+    - field.field.block_content.topbar_new.field_email_photo
+    - field.field.block_content.topbar_new.field_open_hours
+    - field.field.block_content.topbar_new.field_open_hours_photo
+    - field.field.block_content.topbar_new.field_phone
+    - field.field.block_content.topbar_new.field_phone_photo
+id: block_content.topbar_new.default
+targetEntityType: block_content
+bundle: topbar_new
+mode: default
+content:
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_email_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_open_hours:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_open_hours_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_phone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_phone_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

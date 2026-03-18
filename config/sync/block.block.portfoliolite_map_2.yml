@@ -1,0 +1,25 @@
+uuid: f0b834c9-c81c-45d9-a5c3-864a62dcbb74
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:59da559c-67be-4c89-9139-dceff1be01c4'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_map_2
+theme: portfoliolite
+region: map
+weight: -18
+provider: null
+plugin: 'block_content:59da559c-67be-4c89-9139-dceff1be01c4'
+settings:
+  id: 'block_content:59da559c-67be-4c89-9139-dceff1be01c4'
+  label: Map
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

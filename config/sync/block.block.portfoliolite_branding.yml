@@ -1,0 +1,25 @@
+uuid: 8da30060-1518-4a37-871b-67d3f3f0be37
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - portfoliolite
+_core:
+  default_config_hash: exlYq2jw5nhm2jEG6aOXAUsm67ZSCDLcU5a2e8nXxwY
+id: portfoliolite_branding
+theme: portfoliolite
+region: header
+weight: -18
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: true
+visibility: {  }

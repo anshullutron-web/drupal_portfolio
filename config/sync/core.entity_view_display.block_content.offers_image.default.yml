@@ -1,0 +1,22 @@
+uuid: 09f157c5-008a-4972-8a8b-a236fb283994
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.offers_image
+    - field.field.block_content.offers_image.body
+  module:
+    - text
+id: block_content.offers_image.default
+targetEntityType: block_content
+bundle: offers_image
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

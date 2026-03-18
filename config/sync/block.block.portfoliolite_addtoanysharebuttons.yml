@@ -1,0 +1,25 @@
+uuid: c5cffcf8-db9d-44e6-b968-61dfe366790e
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - portfoliolite
+id: portfoliolite_addtoanysharebuttons
+theme: portfoliolite
+region: footer_second
+weight: -18
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'AddToAny share buttons'
+  label_display: '0'
+  provider: addtoany
+  context_mapping: {  }
+  buttons_size: null
+  addtoany_html: ''
+  link_url: ''
+  link_title: ''
+visibility: {  }

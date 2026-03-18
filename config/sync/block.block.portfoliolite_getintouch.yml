@@ -1,0 +1,30 @@
+uuid: 57e70754-1f6a-44fc-bb60-22de3ce2023f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:d205e0de-3666-49b4-a193-643f12b8db7d'
+  module:
+    - block_content
+    - system
+  theme:
+    - portfoliolite
+id: portfoliolite_getintouch
+theme: portfoliolite
+region: header_top
+weight: -17
+provider: null
+plugin: 'block_content:d205e0de-3666-49b4-a193-643f12b8db7d'
+settings:
+  id: 'block_content:d205e0de-3666-49b4-a193-643f12b8db7d'
+  label: 'Get in touch'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

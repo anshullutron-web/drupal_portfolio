@@ -1,0 +1,14 @@
+name: Subscribe
+description: Newsletter subscribe section with webform
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Section title
+    description:
+      type: string
+      title: Section description
+    webform:
+      type: string
+      title: Webform markup

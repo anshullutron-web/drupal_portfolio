@@ -1,0 +1,25 @@
+uuid: 1eef5e2e-5378-4264-a39a-8e82d9ffb25e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:our_skills:9d140968-3d0e-46c8-a179-260fc1350e10'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_ourskillsusingparagraphs
+theme: portfoliolite
+region: skills
+weight: -18
+provider: null
+plugin: 'block_content:9d140968-3d0e-46c8-a179-260fc1350e10'
+settings:
+  id: 'block_content:9d140968-3d0e-46c8-a179-260fc1350e10'
+  label: 'Our Skills (using paragraphs)'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

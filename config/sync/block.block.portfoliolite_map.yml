@@ -1,0 +1,25 @@
+uuid: d7e0bd68-e250-4057-b7f2-db3f4d652838
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:location:c4bb1be7-7c75-440a-b549-5bf6c3e57ccb'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_map
+theme: portfoliolite
+region: map
+weight: -17
+provider: null
+plugin: 'block_content:c4bb1be7-7c75-440a-b549-5bf6c3e57ccb'
+settings:
+  id: 'block_content:c4bb1be7-7c75-440a-b549-5bf6c3e57ccb'
+  label: Map.
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

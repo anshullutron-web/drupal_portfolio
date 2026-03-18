@@ -1,0 +1,25 @@
+uuid: c687846f-f9f5-4fa1-8411-1bfd2a7df727
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e0acd438-9e81-4092-be88-6a06209f42a7'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_subscribenow
+theme: portfoliolite
+region: subscribe
+weight: -18
+provider: null
+plugin: 'block_content:e0acd438-9e81-4092-be88-6a06209f42a7'
+settings:
+  id: 'block_content:e0acd438-9e81-4092-be88-6a06209f42a7'
+  label: 'Subscribe now'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -14,7 +14,7 @@ mode: default
 content:
   field_stats_icon:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
@@ -23,7 +23,7 @@ content:
     region: content
   field_stats_number:
     type: number_integer
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -32,7 +32,7 @@ content:
     region: content
   field_stats_subtitle:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

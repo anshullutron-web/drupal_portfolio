@@ -1,0 +1,25 @@
+uuid: 3779c24e-a566-4edd-a400-2a5c2fd6e7eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.support
+  module:
+    - system
+  theme:
+    - portfoliolite
+id: portfoliolite_support
+theme: portfoliolite
+region: footer_first
+weight: -16
+provider: null
+plugin: 'system_menu_block:support'
+settings:
+  id: 'system_menu_block:support'
+  label: Support
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

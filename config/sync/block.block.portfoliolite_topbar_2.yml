@@ -1,0 +1,25 @@
+uuid: c7a5356b-a47a-4fb2-bcc4-ec5eb02c7496
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:topbar_new:c25e8636-fa72-47f3-9155-c987d37f7780'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_topbar_2
+theme: portfoliolite
+region: header_top
+weight: 0
+provider: null
+plugin: 'block_content:c25e8636-fa72-47f3-9155-c987d37f7780'
+settings:
+  id: 'block_content:c25e8636-fa72-47f3-9155-c987d37f7780'
+  label: Topbar
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: 153a0e48-78b9-4f87-b796-0f6f300e2599
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_plan
+    - field.field.block_content.pricing_plan.field_description
+    - field.field.block_content.pricing_plan.field_pricingplanparagraph
+  module:
+    - entity_reference_revisions
+id: block_content.pricing_plan.default
+targetEntityType: block_content
+bundle: pricing_plan
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pricingplanparagraph:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,67 @@
+global:
+  version: 1.x
+  css:
+    theme:
+      css/style.css: {}
+      css/responsive.css: {}
+
+fontawesome:
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css:
+        type: external
+
+google-font:
+  css:
+    theme:
+      https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap:
+        type: external
+
+header:
+  js:
+    components/header/header.js: {}
+  dependencies:
+    - core/drupal
+    - core/once 
+
+services:
+  js:
+    components/services/services.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+
+skills:
+  js:
+    components/skills/skills.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+
+# works:
+#   js:
+#     components/works/works.js: {}
+#   dependencies:
+#     - core/drupal
+#     - core/once
+
+stats:
+  js:
+    components/stats/stats.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+
+
+pricing:
+  js:
+    components/pricing/pricing.js: {}
+  dependencies:
+    - core/drupal
+    
+getintouch:
+  js:
+    components/getintouch/getintouch.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

@@ -1,0 +1,200 @@
+/* WHY SECTION */
+
+.why {
+  padding: 100px 0;
+  background: white;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* FIX DRUPAL EXTRA WRAPPER */
+
+.why-container > div {
+  display: contents;
+}
+
+/* LEFT SIDE */
+
+.why-left h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.why-left p {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* REMOVE FIELD LABEL */
+
+.field__label {
+  display: none;
+}
+
+/* CARD GRID */
+
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+}
+
+/* CARD */
+
+.why-card {
+  background: #16a085;
+  padding: 60px 35px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  min-height: 260px;
+
+  clip-path: polygon(
+    0 0,
+    calc(100% - 60px) 0,
+    100% 60px,
+    100% 100%,
+    0 100%
+  );
+
+  transition: all .35s ease;
+}
+
+/* HOVER */
+
+.why-card:hover {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+
+/* ICON */
+
+.why-card .icon {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px dotted #16a085;
+}
+
+.why-card i {
+  font-size: 30px;
+  color: #16a085;
+}
+
+/* TEXT */
+
+.why-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.why-card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+/* =========================
+   TABLET (≤ 992px)
+========================= */
+
+@media (max-width: 992px) {
+
+  .why {
+    padding: 70px 0;
+  }
+
+  /* STACK LAYOUT */
+  .why-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* FIX DRUPAL WRAPPER */
+  .why-container > div {
+    display: block;
+  }
+
+  /* TEXT CENTER */
+  .why-left {
+    text-align: center;
+  }
+
+  .why-left h2 {
+    font-size: 36px;
+  }
+
+  .why-left p {
+    font-size: 15px;
+  }
+
+  /* CARDS GRID (2 per row still ok for tablet) */
+  .why-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .why-card {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+}
+/* =========================
+   MOBILE (≤ 576px)
+========================= */
+
+@media (max-width: 576px) {
+
+  .why {
+    padding: 50px 0;
+  }
+
+  /* SINGLE COLUMN CARDS */
+  .why-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .why-left h2 {
+    font-size: 28px;
+  }
+
+  .why-left p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .why-card {
+    padding: 35px 20px;
+  }
+
+  .why-card h3 {
+    font-size: 20px;
+  }
+
+  .why-card p {
+    font-size: 14px;
+  }
+
+}

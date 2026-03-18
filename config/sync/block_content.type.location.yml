@@ -1,0 +1,8 @@
+uuid: 837f75e2-6a0d-4977-8a03-7e6c50d8befd
+langcode: en
+status: true
+dependencies: {  }
+id: location
+label: Location
+revision: false
+description: null

@@ -1,0 +1,18 @@
+$schema: https://drupal.org/schemas/core/components/component.schema.json
+
+name: Header
+description: Main site header with logo and navigation
+
+library: portfoliolite/header
+
+props:
+  type: object
+  properties:
+
+    menu:
+      type: string
+      title: Navigation menu
+
+    logo:
+      type: string
+      title: Site logo

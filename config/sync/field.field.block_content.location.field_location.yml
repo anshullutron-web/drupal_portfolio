@@ -1,0 +1,19 @@
+uuid: b0197d5a-75a7-47cf-88b4-dc0d320f0435
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.location
+    - field.storage.block_content.field_location
+id: block_content.location.field_location
+field_name: field_location
+entity_type: block_content
+bundle: location
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

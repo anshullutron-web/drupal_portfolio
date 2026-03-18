@@ -1,0 +1,26 @@
+$schema: https://drupal.org/schemas/core/components/component.schema.json
+
+name: Hero
+description: Portfolio hero section
+
+library: portfoliolite/hero
+
+props:
+  type: object
+  properties:
+    tag:
+      type: string
+    title:
+      type: string
+    description:
+      type: string
+    button_primary_text:
+      type: string
+    button_primary_url:
+      type: string
+    button_secondary_text:
+      type: string
+    button_secondary_url:
+      type: string
+    image:
+      type: string

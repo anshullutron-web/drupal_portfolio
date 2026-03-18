@@ -1,0 +1,147 @@
+{{ attach_library('portfoliolite/fontawesome') }}
+
+<div class="layout-container">
+
+  {% if page.header_top %}
+    {{ page.header_top }}
+  {% endif %}
+
+  {# Header component #}
+  {% include '@portfoliolite/components/header/header.twig' with {
+    logo: page.header,
+    menu: page.primary_menu
+  } %}
+
+  {% if is_front %}
+
+    {{ page.hero }}
+
+    {% if page.why %}
+    <section class="why">
+      <div class="why-container">
+        {{ page.why }}
+      </div>
+    </section>
+    {% endif %}
+
+    {% if page.about %}
+    <section class="about">
+      <div class="about-container">
+        {{ page.about }}
+      </div>
+    </section>
+    {% endif %}
+
+    {% if page.services %}
+    <section class="services-section">
+      <div class="services-container">
+
+        <button class="services-prev">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+
+        <div class="services-slider">
+          {{ page.services }}
+        </div>
+
+        <button class="services-next">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+
+      </div>
+    </section>
+    {% endif %}
+
+    {% if page.skills %}
+    <section class="skills">
+      <div class="skills-container">
+        {{ page.skills }}
+      </div>
+    </section>
+    {% endif %}
+
+    {% if page.works %}
+    <section class="works">
+      {{ page.works }}
+    </section>
+    {% endif %}
+
+    {% if page.stats %}
+    <section class="stats-region">
+      {{ page.stats }}
+    </section>
+    {% endif %}
+
+    {% if page.team %}
+    <section class="team">
+      {{ page.team }}
+    </section>
+    {% endif %}
+
+    {% if page.review %}
+    <section class="review">
+      {{ page.review }}
+    </section>
+    {% endif %}
+
+    {% if page.pricing %}
+    <section class="pricing">
+      {{ page.pricing }}
+    </section>
+    {% endif %}
+
+    {{ attach_library('portfoliolite/offer') }}
+
+    {% if page.offer %}
+    <section class="offer">
+      <div class="container">
+        {{ page.offer }}
+      </div>
+    </section>
+    {% endif %}
+
+    {% if page.blog %}
+    <section class="blog">
+      {{ page.blog }}
+    </section>
+    {% endif %}
+
+    {% if page.subscribe %}
+    <section class="subscribe">
+      {{ page.subscribe }}
+    </section>
+    {% endif %}
+
+    {% if page.getintouch %}
+    <section class="getintouch">
+      {{ page.getintouch }}
+    </section>
+    {% endif %}
+
+    {% if page.contact %}
+    <section class="contact">
+      {{ page.contact }}
+    </section>
+    {% endif %}
+
+    {% if page.map %}
+    <section class="map">
+      {{ page.map }}
+    </section>
+    {% endif %}
+
+  {% else %}
+
+    <main>
+      {{ page.content }}
+    </main>
+
+  {% endif %}
+
+  {% if page.footer %}
+  <footer>
+    {{ page.footer }}
+  </footer>
+  {% endif %}
+
+</div>

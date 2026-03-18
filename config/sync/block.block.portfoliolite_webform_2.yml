@@ -1,0 +1,26 @@
+uuid: 3d33071c-8b69-4986-81a2-769bceeed459
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.subscribe_now
+  module:
+    - webform
+  theme:
+    - portfoliolite
+id: portfoliolite_webform_2
+theme: portfoliolite
+region: subscribe
+weight: -19
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: subscribe_now
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility: {  }

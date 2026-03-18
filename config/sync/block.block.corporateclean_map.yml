@@ -1,0 +1,25 @@
+uuid: 95e196e7-be29-45b6-84da-03c21f18749c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:location:c4bb1be7-7c75-440a-b549-5bf6c3e57ccb'
+  module:
+    - block_content
+  theme:
+    - corporateclean
+id: corporateclean_map
+theme: corporateclean
+region: footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:c4bb1be7-7c75-440a-b549-5bf6c3e57ccb'
+settings:
+  id: 'block_content:c4bb1be7-7c75-440a-b549-5bf6c3e57ccb'
+  label: Map.
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: b793f4af-a344-492e-8035-14d45551991c
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b7e11d1f-a106-4706-96a6-18bafdc1f21d'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_whychooseuscards
+theme: portfoliolite
+region: why
+weight: -17
+provider: null
+plugin: 'block_content:b7e11d1f-a106-4706-96a6-18bafdc1f21d'
+settings:
+  id: 'block_content:b7e11d1f-a106-4706-96a6-18bafdc1f21d'
+  label: 'Why Choose us cards'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

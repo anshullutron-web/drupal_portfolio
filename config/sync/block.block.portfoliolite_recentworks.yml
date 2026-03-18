@@ -1,0 +1,25 @@
+uuid: 9b0d9733-6595-4d2c-b88d-187f67c51e38
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:95e05e1c-70c3-49c4-a724-33afb42343cc'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_recentworks
+theme: portfoliolite
+region: works
+weight: -18
+provider: null
+plugin: 'block_content:95e05e1c-70c3-49c4-a724-33afb42343cc'
+settings:
+  id: 'block_content:95e05e1c-70c3-49c4-a724-33afb42343cc'
+  label: 'Recent works'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

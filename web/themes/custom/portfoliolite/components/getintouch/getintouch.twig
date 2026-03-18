@@ -1,0 +1,42 @@
+{{ attach_library('portfoliolite/getintouch') }}
+
+<section class="getintouch">
+
+  <div class="container">
+
+    {# HEADER #}
+    <div class="getintouch-header">
+      <h2>{{ label }}</h2>
+      <div class="getintouch-description">
+        {{ content.body }}
+      </div>
+    </div>
+
+    {# MAIN LAYOUT #}
+    <div class="getintouch-wrapper">
+
+      {# LEFT SIDE FAQ #}
+      <div class="getintouch-faq">
+
+        <h3>Do you have any Question about</h3>
+
+        <div class="faq-list">
+          {{ content.field_faq }}
+        </div>
+
+      </div>
+
+      {# RIGHT SIDE FORM #}
+      <div class="getintouch-form">
+        <div class="form-card">
+
+          {{ webform  }}
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

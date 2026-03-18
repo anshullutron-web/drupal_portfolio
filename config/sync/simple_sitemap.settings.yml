@@ -23,4 +23,3 @@ enabled_entity_types:
   - media
   - redirect
   - user
-  - webform_submission

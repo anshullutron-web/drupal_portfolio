@@ -1,0 +1,8 @@
+uuid: 4213445d-9268-4fe7-9a9d-737b4cd118c7
+langcode: en
+status: true
+dependencies: {  }
+id: pricing_plan
+label: 'Pricing Plan'
+revision: false
+description: 'Pricing plan block'

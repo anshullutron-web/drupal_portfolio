@@ -1,22 +1,22 @@
-uuid: 59a6a983-83c7-4f9a-9d3e-ae3b0d5b9c3d
+uuid: ce5aa9f3-f3f7-447d-9644-167687fdb3c9
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:a50f361b-e1b1-457a-8b7a-04b084c1d91f'
+    - 'block_content:hero_section:d7b4f8a8-4dae-43da-8159-302a0ecb5393'
   module:
     - block_content
   theme:
     - corporateclean
-id: herosection
+id: corporateclean_hero
 theme: corporateclean
 region: hero_top
-weight: -6
+weight: 0
 provider: null
-plugin: 'block_content:a50f361b-e1b1-457a-8b7a-04b084c1d91f'
+plugin: 'block_content:d7b4f8a8-4dae-43da-8159-302a0ecb5393'
 settings:
-  id: 'block_content:a50f361b-e1b1-457a-8b7a-04b084c1d91f'
-  label: 'Hero section'
+  id: 'block_content:d7b4f8a8-4dae-43da-8159-302a0ecb5393'
+  label: Hero
   label_display: visible
   provider: block_content
   status: true

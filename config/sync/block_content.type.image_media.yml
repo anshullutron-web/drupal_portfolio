@@ -1,0 +1,8 @@
+uuid: ec059e9a-73a2-4635-ac4e-51a501ce4a88
+langcode: en
+status: true
+dependencies: {  }
+id: image_media
+label: Image_media
+revision: false
+description: 'For images only '

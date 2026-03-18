@@ -1,0 +1,296 @@
+/* =================================
+   SERVICES SECTION
+================================= */
+
+.services-section{
+  padding:120px 0;
+  background:white;
+}
+
+.services-container{
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
+  position:relative;
+}
+
+/* =================================
+   TITLE
+================================= */
+
+#block-portfoliolite-ourservicesparagraph h2{
+  text-align:center;
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+/* =================================
+   DESCRIPTION
+================================= */
+
+#block-portfoliolite-ourservicesparagraph > div > p{
+  max-width:750px;
+  margin:auto;
+  text-align:center;
+  color:#666;
+  line-height:1.8;
+  margin-bottom:70px;
+}
+
+/* =================================
+   REMOVE DRUPAL LABELS
+================================= */
+
+.field__label{
+  display:none;
+}
+
+/* =================================
+   FIX DRUPAL CARD WRAPPER
+================================= */
+
+#block-portfoliolite-ourservicesparagraph > div:last-child > div{
+  display:flex;
+  gap:40px;
+  justify-content:center;
+}
+
+/* =================================
+   SERVICE CARD
+================================= */
+
+.paragraph--type--services{
+
+  flex:0 0 calc(33.333% - 30px);
+
+  background:#fff;
+  padding:50px 40px;
+
+  border-radius:6px;
+
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+  text-align:center;
+
+  position:relative;
+
+  overflow:hidden;
+
+  transition:.3s;
+}
+
+.paragraph--type--services:hover{
+  transform:translateY(-8px);
+}
+
+/* =================================
+   ICON BOX BASE
+================================= */
+
+.paragraph--type--services::before{
+
+  font-family:"Font Awesome 6 Free";
+  font-weight:900;
+
+  width:120px;
+  height:120px;
+
+  background:#333;
+
+  border-radius:30px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:#fff;
+  font-size:50px;
+
+  margin:auto;
+  margin-bottom:25px;
+
+  position:relative;
+  z-index:2;
+}
+
+/* =================================
+   DIFFERENT ICONS
+================================= */
+
+.paragraph--type--services:nth-child(1)::before{
+  content:"\f0d6";   /* insurance / file */
+}
+
+.paragraph--type--services:nth-child(2)::before{
+  content:"\f002";   /* search */
+}
+
+.paragraph--type--services:nth-child(3)::before{
+  content:"\f1b9";   /* car */
+}
+
+.paragraph--type--services:nth-child(4)::before{
+  content:"\f0b1";   /* briefcase */
+}
+
+.paragraph--type--services:nth-child(5)::before{
+  content:"\f007";   /* user */
+}
+
+.paragraph--type--services:nth-child(6)::before{
+  content:"\f080";   /* chart */
+}
+
+/* =================================
+   GREEN HOVER BACKGROUND
+================================= */
+
+.paragraph--type--services::after{
+
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:0;
+
+  width:100%;
+  height:170px;
+
+  background:#16a085;
+
+  transform:translateY(-100%);
+
+  transition:.4s;
+
+  z-index:1;
+}
+
+.paragraph--type--services:hover::after{
+  transform:translateY(0);
+}
+
+/* =================================
+   NUMBER BADGE
+================================= */
+
+.field--name-field-number .field__item{
+
+  position:absolute;
+
+  top:15px;
+  right:15px;
+
+  width:45px;
+  height:45px;
+
+  border-radius:50%;
+
+  background:#16a085;
+  color:#fff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-weight:600;
+
+  z-index:3;
+}
+
+/* =================================
+   SERVICE TITLE
+================================= */
+
+.field--name-field-subtitle .field__item{
+
+  font-size:22px;
+  font-weight:600;
+
+  margin-top:10px;
+  margin-bottom:15px;
+
+  color:#333;
+}
+
+/* =================================
+   DESCRIPTION
+================================= */
+
+.paragraph--type--services p{
+
+  color:#666;
+  line-height:1.7;
+  font-size:15px;
+}
+
+/* =================================
+   SLIDER ARROWS
+================================= */
+
+.services-prev,
+.services-next{
+
+  position:absolute;
+
+  top:50%;
+  transform:translateY(-50%);
+
+  width:60px;
+  height:60px;
+
+  background:#16a085;
+  color:#fff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:none;
+  cursor:pointer;
+
+  z-index:10;
+}
+
+.services-prev{
+  left:0;
+}
+
+.services-next{
+  right:0;
+}
+
+.services-prev:hover,
+.services-next:hover{
+  background:#138a72;
+}
+@media (max-width: 992px) {
+
+  /* STACK CARDS WRAPPER */
+  #block-portfoliolite-ourservicesparagraph > div:last-child > div {
+    flex-wrap: wrap;              /* allow wrapping */
+    justify-content: center;
+    gap: 30px;
+  }
+
+  /* 2 CARDS PER ROW */
+  .paragraph--type--services {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+}
+@media (max-width: 576px) {
+
+  /* 🔥 FULL WIDTH CARDS */
+  #block-portfoliolite-ourservicesparagraph > div:last-child > div {
+    flex-direction: column;      /* stack vertically */
+    align-items: center;
+  }
+
+  .paragraph--type--services {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+}

@@ -1,0 +1,11 @@
+name: Pricing
+description: Pricing plans section
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    description:
+      type: string
+    plans:
+      type: array

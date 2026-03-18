@@ -1,0 +1,25 @@
+uuid: dae801fb-885c-4745-a48d-87dda4d9627c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.quick-links
+  module:
+    - system
+  theme:
+    - portfoliolite
+id: portfoliolite_quicklinks
+theme: portfoliolite
+region: footer_first
+weight: -17
+provider: null
+plugin: 'system_menu_block:quick-links'
+settings:
+  id: 'system_menu_block:quick-links'
+  label: 'Quick Links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

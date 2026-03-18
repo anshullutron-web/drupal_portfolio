@@ -1,0 +1,19 @@
+uuid: 5abaacd2-df9b-409a-b053-7bfe4ae9b1ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_section
+    - field.storage.block_content.field_hero_title
+id: block_content.hero_section.field_hero_title
+field_name: field_hero_title
+entity_type: block_content
+bundle: hero_section
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

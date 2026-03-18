@@ -1,0 +1,20 @@
+uuid: f02c4266-cfb7-42f0-b1c9-ea0741f5f3e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pricing.field_price
+    - field.field.paragraph.pricing.field_pricing_body
+    - field.field.paragraph.pricing.field_pricing_button
+    - field.field.paragraph.pricing.field_pricing_header
+    - paragraphs.paragraphs_type.pricing
+id: paragraph.pricing.default
+targetEntityType: paragraph
+bundle: pricing
+mode: default
+content: {  }
+hidden:
+  field_price: true
+  field_pricing_body: true
+  field_pricing_button: true
+  field_pricing_header: true

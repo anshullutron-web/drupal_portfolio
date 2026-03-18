@@ -1,0 +1,17 @@
+name: About Section
+description: About us section with image and text
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    subtitle:
+      type: string
+    description:
+      type: string
+    button_text:
+      type: string
+    button_url:
+      type: string
+    image:
+      type: string

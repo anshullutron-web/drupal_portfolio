@@ -1,0 +1,50 @@
+uuid: 868cf87b-2d44-491d-b9b1-466af093778c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_plan
+    - field.storage.block_content.field_pricingplanparagraph
+  module:
+    - entity_reference_revisions
+id: block_content.pricing_plan.field_pricingplanparagraph
+field_name: field_pricingplanparagraph
+entity_type: block_content
+bundle: pricing_plan
+label: pricingplanparagraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: {  }
+    negate: 0
+    target_bundles_drag_drop:
+      contact:
+        weight: 9
+        enabled: false
+      pricing:
+        weight: 10
+        enabled: true
+      primary_cards:
+        weight: 11
+        enabled: false
+      progress_bar:
+        weight: 12
+        enabled: false
+      secondary_card:
+        weight: 13
+        enabled: false
+      services:
+        weight: 14
+        enabled: false
+      stats:
+        weight: 15
+        enabled: false
+      tertiary_cards:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

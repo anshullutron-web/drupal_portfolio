@@ -1,0 +1,52 @@
+{{ attach_library('portfoliolite/services') }}
+
+<section class="services">
+
+  <div class="services-container">
+
+    <div class="services-header">
+      <h2>{{ title }}</h2>
+      <p>{{ body }}</p>
+    </div>
+
+    <div class="services-slider-wrapper">
+
+      <div class="services-prev">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+
+      <div class="services-slider">
+
+        <div class="services-track">
+
+          {% for item in content.field_services %}
+          <div class="service-card">
+
+            <div class="service-icon">
+              <i class="fas fa-user"></i>
+            </div>
+
+            <span class="service-number">
+              {{ item.entity.field_number.value }}
+            </span>
+
+            <h3>{{ item.entity.field_subtitle.value }}</h3>
+
+            <p>{{ item.entity.field_description.value }}</p>
+
+          </div>
+          {% endfor %}
+
+        </div>
+
+      </div>
+
+      <div class="services-next">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

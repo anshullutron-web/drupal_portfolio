@@ -1,0 +1,19 @@
+uuid: 2ce48534-2e6d-4fc1-8e80-34960259dc01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pricing_header
+    - paragraphs.paragraphs_type.pricing
+id: paragraph.pricing.field_pricing_header
+field_name: field_pricing_header
+entity_type: paragraph
+bundle: pricing
+label: 'pricing header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

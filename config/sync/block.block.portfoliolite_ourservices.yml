@@ -1,0 +1,25 @@
+uuid: a6bf2531-218a-41b3-95ce-2ff4c38dfc7c
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:services_section:56acd369-ffbe-4dc2-aa86-cbe6ff2f3bc5'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_ourservices
+theme: portfoliolite
+region: services
+weight: -17
+provider: null
+plugin: 'block_content:56acd369-ffbe-4dc2-aa86-cbe6ff2f3bc5'
+settings:
+  id: 'block_content:56acd369-ffbe-4dc2-aa86-cbe6ff2f3bc5'
+  label: 'Our Services'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

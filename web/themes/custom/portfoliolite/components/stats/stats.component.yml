@@ -1,0 +1,7 @@
+name: Stats
+description: Stats counter section
+props:
+  type: object
+  properties:
+    content:
+      type: object

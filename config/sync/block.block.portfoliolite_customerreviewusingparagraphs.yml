@@ -1,0 +1,25 @@
+uuid: ad1dc193-97cb-495d-b3b0-af7b1b101b54
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:customer_review_paragraphs:a86eb337-0898-47d4-856e-c8ded9e7d42e'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_customerreviewusingparagraphs
+theme: portfoliolite
+region: review
+weight: -18
+provider: null
+plugin: 'block_content:a86eb337-0898-47d4-856e-c8ded9e7d42e'
+settings:
+  id: 'block_content:a86eb337-0898-47d4-856e-c8ded9e7d42e'
+  label: 'Customer Review (using paragraphs) '
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

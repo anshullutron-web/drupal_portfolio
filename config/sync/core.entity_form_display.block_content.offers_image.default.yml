@@ -1,0 +1,45 @@
+uuid: ffb0545d-f04c-4f4f-bc1e-b9af80e70ca8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.offers_image
+    - field.field.block_content.offers_image.body
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: block_content.offers_image.default
+targetEntityType: block_content
+bundle: offers_image
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

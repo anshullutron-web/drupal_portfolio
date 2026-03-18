@@ -1,0 +1,142 @@
+body.cke_editable_themed {
+  color: var(--gin-color-text);
+}
+body.cke_editable_themed.gin--dark-mode {
+  background-color: var(--gin-bg-layer2);
+}
+
+a {
+  color: var(--gin-color-primary);
+}
+
+.cke_panel_grouptitle {
+  color: var(--gin-color-title);
+  background: var(--gin-bg-layer2);
+}
+
+.cke_panel_listItem.cke_selected a,
+.cke_panel_listItem a:hover,
+.cke_panel_listItem a:focus,
+.cke_panel_listItem a:active {
+  background-color: var(--gin-color-primary-light);
+}
+
+.cke_editable {
+  line-height: 1.5;
+}
+
+/* CKE Context Menu */
+.cke_panel_block {
+  border-color: var(--gin-border-color-form-element);
+  border-radius: var(--gin-border-m);
+}
+.cke_panel_block .cke_menu .cke_menubutton_icon {
+  background-color: var(--gin-bg-app);
+}
+.gin--dark-mode .cke_panel_block .cke_menu .cke_menubutton_icon .cke_button_icon {
+  filter: invert(1);
+}
+.cke_panel_block .cke_menu .cke_menubutton_label {
+  color: var(--gin-color-text);
+}
+.cke_panel_block .cke_menu .cke_menubutton_shortcut {
+  color: var(--gin-color-text-light);
+}
+.cke_panel_block .cke_menu a:hover, .cke_panel_block .cke_menu a:focus, .cke_panel_block .cke_menu a:active {
+  background-color: var(--gin-color-primary-light);
+}
+.cke_panel_block .cke_menu a:hover .cke_menubutton_icon, .cke_panel_block .cke_menu a:focus .cke_menubutton_icon, .cke_panel_block .cke_menu a:active .cke_menubutton_icon {
+  background-color: var(--gin-color-primary-light);
+}
+
+body.cke_editable_themed blockquote {
+  font-size: var(--gin-font-size-quote);
+  position: relative;
+  padding-inline-start: var(--gin-spacing-l);
+  margin: var(--gin-spacing-m);
+}
+body.cke_editable_themed blockquote::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--gin-color-primary);
+  border-radius: 2px;
+}/*# sourceMappingURL=ckeditor.css.map */ne;
+}
+
+.cke.cke_chrome.cke_focus,
+.cke.cke_chrome:hover,
+.cke:hover .cke_contents,
+.cke:hover .cke_top,
+.cke:hover .cke_bottom {
+  border-color: var(--gin-color-text);
+}
+.gin--dark-mode .cke.cke_chrome.cke_focus,
+.gin--dark-mode .cke.cke_chrome:hover,
+.gin--dark-mode .cke:hover .cke_contents,
+.gin--dark-mode .cke:hover .cke_top,
+.gin--dark-mode .cke:hover .cke_bottom {
+  border-color: var(--gin-border-color-layer2);
+}
+
+.cke:hover .cke_top, .gin--dark-mode .cke:hover .cke_top {
+  border-block-end-color: var(--gin-border-color);
+}
+
+.cke.cke_chrome.cke_focus:hover,
+.cke.cke_focus .cke_contents,
+.cke.cke_focus .cke_top,
+.cke.cke_focus .cke_bottom,
+.error + .cke.cke_chrome.cke_focus:hover,
+.error + .cke.cke_focus .cke_contents,
+.error + .cke.cke_focus .cke_top,
+.error + .cke.cke_focus .cke_bottom {
+  border-color: var(--gin-color-text);
+}
+
+.cke_top,
+.cke.cke_chrome.cke_focus:hover .cke_top,
+.cke.cke_focus .cke_top,
+.error + .cke.cke_focus .cke_top,
+.error + .cke.cke_chrome.cke_focus:hover .cke_top {
+  border-block-end: 1px solid var(--gin-border-color);
+}
+
+.cke textarea.cke_source {
+  padding: var(--gin-spacing-s) var(--gin-spacing-xs);
+  color: var(--gin-color-text);
+  background-color: transparent;
+}
+
+body .cke_notification_info {
+  opacity: 1;
+  padding: var(--gin-spacing-xs);
+  background: var(--gin-bg-layer4);
+  border: 0 none;
+  border-radius: var(--gin-border-m);
+  box-shadow: var(--gin-shadow-l1);
+}
+body .cke_notification_info .cke_notification_message {
+  color: var(--gin-color-text);
+}
+body .cke_notification_info .cke_notification_close {
+  inset-block-start: var(--gin-spacing-xxs);
+  inset-inline-end: var(--gin-spacing-xxs);
+  background: var(--gin-color-text);
+  -webkit-mask-image: icon("close");
+          mask-image: icon("close");
+  -webkit-mask-position: center center;
+          mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 12px 12px;
+          mask-size: 12px 12px;
+}
+
+.filter-tips {
+  color: var(--gin-color-text-light);
+}/*# sourceMappingURL=ckeditor.css.map */

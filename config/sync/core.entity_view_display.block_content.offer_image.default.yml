@@ -1,0 +1,22 @@
+uuid: c1525fc1-acbf-47e7-aed2-8a8cc88be723
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.offer_image
+    - field.field.block_content.offer_image.field_offer_image
+id: block_content.offer_image.default
+targetEntityType: block_content
+bundle: offer_image
+mode: default
+content:
+  field_offer_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

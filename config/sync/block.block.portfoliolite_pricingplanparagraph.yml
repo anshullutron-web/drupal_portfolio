@@ -1,0 +1,25 @@
+uuid: 3ecb059a-3fcc-4270-a058-8ae0331c293a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:primary_card:0843b808-39c3-4345-a70d-7b097cdf1b86'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_pricingplanparagraph
+theme: portfoliolite
+region: pricing
+weight: -18
+provider: null
+plugin: 'block_content:0843b808-39c3-4345-a70d-7b097cdf1b86'
+settings:
+  id: 'block_content:0843b808-39c3-4345-a70d-7b097cdf1b86'
+  label: 'Pricing Plan (paragraph)'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

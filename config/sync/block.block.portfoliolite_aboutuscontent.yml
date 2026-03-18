@@ -1,0 +1,25 @@
+uuid: 235200c1-a640-4901-acca-9f1d9bfc61bb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4de1d1ee-af06-4f8a-9396-1699e1b5e6fb'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_aboutuscontent
+theme: portfoliolite
+region: about
+weight: -17
+provider: null
+plugin: 'block_content:4de1d1ee-af06-4f8a-9396-1699e1b5e6fb'
+settings:
+  id: 'block_content:4de1d1ee-af06-4f8a-9396-1699e1b5e6fb'
+  label: 'About us content'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

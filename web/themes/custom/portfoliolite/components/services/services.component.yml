@@ -1,0 +1,9 @@
+name: Services
+description: Services slider section
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    description:
+      type: string

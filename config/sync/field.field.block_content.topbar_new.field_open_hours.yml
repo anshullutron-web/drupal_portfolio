@@ -1,0 +1,19 @@
+uuid: 53e52abb-6e31-4417-b9a6-2f7f29200ad8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.topbar_new
+    - field.storage.block_content.field_open_hours
+id: block_content.topbar_new.field_open_hours
+field_name: field_open_hours
+entity_type: block_content
+bundle: topbar_new
+label: 'open hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

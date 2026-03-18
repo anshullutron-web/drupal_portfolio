@@ -1,0 +1,24 @@
+uuid: 1912150d-95f1-4b7d-8982-a709fa1ce0bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.our_blog_view_
+  module:
+    - views
+  theme:
+    - portfoliolite
+id: portfoliolite_views_block__our_blog_view__block_1
+theme: portfoliolite
+region: blog
+weight: -17
+provider: null
+plugin: 'views_block:our_blog_view_-block_1'
+settings:
+  id: 'views_block:our_blog_view_-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

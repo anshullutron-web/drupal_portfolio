@@ -1,0 +1,25 @@
+uuid: 33681ee6-d6b0-4888-a8a9-69d1cb51cec5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:50670652-ee97-4a58-a571-69e308e081f4'
+  module:
+    - block_content
+  theme:
+    - portfoliolite
+id: portfoliolite_whychooseus_2
+theme: portfoliolite
+region: why
+weight: -18
+provider: null
+plugin: 'block_content:50670652-ee97-4a58-a571-69e308e081f4'
+settings:
+  id: 'block_content:50670652-ee97-4a58-a571-69e308e081f4'
+  label: 'Why Choose us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

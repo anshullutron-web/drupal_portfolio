@@ -1,0 +1,11 @@
+name: Skills
+description: Skills progress section
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    description:
+      type: string
+    image:
+      type: string

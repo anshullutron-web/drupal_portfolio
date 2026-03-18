@@ -1,0 +1,42 @@
+name: Portfolio Lite
+type: theme
+description: "A basic Portfolio theme - morox by GEC designs."
+core_version_requirement: ^10
+base theme: false
+
+libraries:
+  - portfoliolite/global
+  - portfoliolite/google-font
+  - portfoliolite/fontawesome
+
+regions:
+  header_top: 'Top Bar'
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+
+  hero: 'Hero Section'
+
+  why: 'Why Choose Us'
+  about: 'About Section'
+  services: 'Services Section'
+  skills: 'Skills Section'
+  works: 'Works Section'
+  stats: 'Stats Section'
+
+  team: 'Team Section'
+  review: 'Review Section'
+  pricing: 'Pricing Section'
+  offer: 'Offer Section'
+
+  blog: 'Blog Section'
+  subscribe: 'Subscribe Section'
+
+  contact: 'Contact Section'
+  map: 'Map Section'
+
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'
+  footer: 'Footer Bottom'
+components:
+  namespaces:
+    portfoliolite: components

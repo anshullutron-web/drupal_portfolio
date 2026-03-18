@@ -1,0 +1,89 @@
+.subscribe{
+  padding:120px 0;
+  text-align:center;
+  background:linear-gradient(180deg,#8fb9b5,#86b9b2);
+  color:white;
+}
+
+/* TITLE */
+
+.subscribe h2{
+  font-size:48px;
+  font-weight:700;
+  margin-bottom:20px;
+  color:#0ea58a;
+}
+
+/* DESCRIPTION */
+
+.subscribe p{
+  max-width:650px;
+  margin:0 auto 35px;
+  line-height:1.8;
+  color:#f4f4f4;
+}
+
+/* CHECKBOX */
+
+.subscribe .form-type-checkbox{
+  margin-bottom:35px;
+  color:#eaeaea;
+  font-size:16px;
+}
+
+/* HIDE EMAIL LABEL */
+
+.subscribe label[for*="email"]{
+  display:none;
+}
+
+/* FORM LAYOUT */
+
+.subscribe form{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* INPUT */
+
+.subscribe input[type="email"]{
+  width:700px;
+  max-width:80%;
+  padding:20px 25px;
+  border:none;
+  outline:none;
+  font-size:18px;
+  border-radius:3px 0 0 3px;
+}
+
+/* SUBMIT BUTTON */
+
+.subscribe input[type="submit"]{
+  background:#0ea58a;
+  color:white;
+  border:none;
+  padding:0 28px;
+  font-size:22px;
+  cursor:pointer;
+  border-radius:0 3px 3px 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* PAPER PLANE ICON */
+
+.subscribe input[type="submit"]::before{
+  content:"\f1d8";
+  font-family:"Font Awesome 6 Free";
+  font-weight:900;
+}
+
+/* SHADOW */
+
+.subscribe form{
+  box-shadow:0 15px 35px rgba(0,0,0,0.2);
+  width:max-content;
+  margin:0 auto;
+}
