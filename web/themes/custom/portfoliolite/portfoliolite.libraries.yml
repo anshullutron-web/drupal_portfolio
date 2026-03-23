@@ -3,7 +3,6 @@ global:
   css:
     theme:
       css/style.css: {}
-      css/responsive.css: {}
 
 fontawesome:
   css:

@@ -1,0 +1,37 @@
+{{ attach_library('portfoliolite/footer') }}
+
+<div class="footer-wrapper">
+
+  <div class="footer-grid">
+
+    <!-- LEFT BLOCK -->
+    <div class="footer-col footer-about">
+      {{ content.footer_left1 }}
+    </div>
+
+    <!-- QUICK LINKS (TITLE COMES FROM BLOCK) -->
+    <div class="footer-col">
+      {{ content.quicklinks }}
+    </div>
+
+    <!-- SUPPORT (TITLE COMES FROM BLOCK) -->
+    <div class="footer-col">
+      {{ content.support }}
+    </div>
+
+    <!-- RECENT BLOG -->
+    <div class="footer-col footer-blog">
+      {{ content.footer_right2 }}
+    </div>
+
+  </div>
+
+</div>
+
+{% if page.footer %}
+  <div class="footer-bottom-extreme">
+    <div class="container">
+      {{ page.footer }}
+    </div>
+  </div>
+{% endif %}

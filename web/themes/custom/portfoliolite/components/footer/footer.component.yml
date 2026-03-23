@@ -1,0 +1,12 @@
+footer:
+  label: Footer
+  description: Custom footer component
+  regions:
+    footer_left1:
+      label: Footer Left 1
+    quicklinks:
+      label: Quick Links
+    support:
+      label: Support
+    footer_right2:
+      label: Footer Right 2

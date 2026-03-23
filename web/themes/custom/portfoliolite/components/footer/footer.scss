@@ -1,0 +1,136 @@
+.site-footer {
+
+  .footer-top {
+    background: white;
+    padding: 60px 0;
+
+    .container {
+    max-width: 1200px;   // 👈 add this
+    margin: 0 auto;      // 👈 center it
+    padding: 0 20px;     // 👈 side spacing
+
+      /* THIS IS THE REAL FIX */
+      > div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        padding: 0 10px;
+      }
+
+
+      /* EACH BLOCK */
+      > div > div {
+        width: 100%;
+      }
+
+      /* BLOCK STYLING */
+      .block {
+        h2, h3, h4 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 15px;
+          color: #222;
+        }
+
+        p {
+          color: #555;
+          line-height: 1.6;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 10px;
+
+            a {
+              text-decoration: none;
+              color: #555;
+
+              &:hover {
+                color: #00a88f;
+              }
+            }
+          }
+        }
+      }
+
+      /* BLOG FIX */
+      .block-block-content p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: 70px;
+          height: 50px;
+          object-fit: cover;
+        }
+      }
+
+    }
+  }
+
+  /* FOOTER SECOND */
+  .footer-bottom {
+    background: #9bbab3;
+    padding: 25px 0;
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .block-addtoany {
+      display: flex;
+      gap: 15px;
+
+      a {
+        width: 45px;
+        height: 45px;
+        background: #00a88f;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+
+        &:hover {
+          background: #00796b;
+        }
+      }
+    }
+  }
+
+.site-footer .footer-bottom-extreme {
+  background: #9bbab3;
+  padding: 20px 0;
+}
+
+.site-footer .footer-bottom-extreme .layout__region {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-footer .footer-bottom-extreme p {
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+  /* RESPONSIVE */
+  @media (max-width: 992px) {
+    .footer-top .container > div {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .footer-top .container > div {
+      grid-template-columns: 1fr;
+    }
+  }
+}
