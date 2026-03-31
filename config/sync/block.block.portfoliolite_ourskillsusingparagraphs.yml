@@ -16,7 +16,7 @@ provider: null
 plugin: 'block_content:9d140968-3d0e-46c8-a179-260fc1350e10'
 settings:
   id: 'block_content:9d140968-3d0e-46c8-a179-260fc1350e10'
-  label: 'Our Skills (using paragraphs)'
+  label: 'Our Skills'
   label_display: visible
   provider: block_content
   status: true

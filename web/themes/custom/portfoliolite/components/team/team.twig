@@ -1,53 +1,33 @@
 {{ attach_library('portfoliolite/team') }}
-
 <section class="team">
-
   <div class="team-header">
     <h2>{{ title }}</h2>
     <p>{{ description }}</p>
   </div>
-
   <div class="team-grid">
-
     {% for member in members %}
-    
       <div class="team-card">
-
         <div class="team-image">
-
           <img src="{{ member.image }}" alt="{{ member.name }}">
-
 <div class="team-overlay">
-
   <div class="team-info">
     <h3>{{ member.name }}</h3>
     <span>{{ member.role }}</span>
   </div>
-
   <div class="team-social">
-
   <a href="#">
     <i class="fa-brands fa-facebook-f"></i>
   </a>
-
   <a href="#">
     <i class="fa-brands fa-twitter"></i>
   </a>
-
   <a href="#">
     <i class="fa-brands fa-instagram"></i>
   </a>
-
 </div>
-
 </div>
-
         </div>
-
       </div>
-
     {% endfor %}
-
   </div>
-
 </section>

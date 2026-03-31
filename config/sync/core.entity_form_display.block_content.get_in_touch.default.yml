@@ -5,11 +5,9 @@ dependencies:
   config:
     - block_content.type.get_in_touch
     - field.field.block_content.get_in_touch.body
-    - field.field.block_content.get_in_touch.field_a
   module:
     - field_layout
     - layout_discovery
-    - paragraphs
     - text
 third_party_settings:
   field_layout:
@@ -30,24 +28,6 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
-    third_party_settings: {  }
-  field_a:
-    type: paragraphs
-    weight: 27
-    region: content
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
     third_party_settings: {  }
   info:
     type: string_textfield

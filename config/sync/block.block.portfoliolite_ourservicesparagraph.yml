@@ -16,7 +16,7 @@ provider: null
 plugin: 'block_content:56acd369-ffbe-4dc2-aa86-cbe6ff2f3bc5'
 settings:
   id: 'block_content:56acd369-ffbe-4dc2-aa86-cbe6ff2f3bc5'
-  label: 'Our services (paragraph)'
+  label: 'Our services'
   label_display: visible
   provider: block_content
   status: true

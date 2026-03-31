@@ -4,7 +4,7 @@
 
 /* TARGET YOUR SECTION */
 section.map {
-  width: 100%;
+  width: 99.5%;
   margin: 0;
   padding: 0;
 }
@@ -22,7 +22,7 @@ section.map div {
 
 /* FORCE FULL WIDTH MAP */
 section.map iframe {
-  width: 100vw !important;
+  width: 99.5vw !important;
   height: 450px !important;
   display: block;
   border: 0;
