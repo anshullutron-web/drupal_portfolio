@@ -1,36 +1,55 @@
-console.log("Skills JS loaded");
-
-(function (Drupal, once) {
+(function (Drupal) {
 
   Drupal.behaviors.skillsProgress = {
     attach: function (context) {
 
-      once('skillsProgress', context.querySelectorAll('.progress-bar')).forEach(function (bar) {
+      const bars = context.querySelectorAll('.progress-bar');
 
-        const percent = parseInt(bar.getAttribute('data-percent'));
+      function animateBar(bar) {
+        const percent = parseInt(bar.dataset.percent) || 0;
         const value = bar.querySelector('.progress-value');
 
         let count = 0;
 
-        const interval = setInterval(function () {
+        function animate() {
+          if (count >= percent) return;
 
           count++;
-
           bar.style.width = count + "%";
 
           if (value) {
             value.textContent = count + "%";
           }
 
-          if (count >= percent) {
-            clearInterval(interval);
+          requestAnimationFrame(animate);
+        }
+
+        // reset before animating again
+        bar.style.width = "0%";
+        if (value) value.textContent = "0%";
+
+        animate();
+      }
+
+      function isInView(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+      }
+
+      function handleScroll() {
+        bars.forEach(function (bar) {
+          if (isInView(bar)) {
+            animateBar(bar);
           }
+        });
+      }
 
-        }, 20);
+      // Run on scroll
+      window.addEventListener('scroll', handleScroll);
 
-      });
-
+      // Run once on load
+      handleScroll();
     }
   };
 
-})(Drupal, once);
+})(Drupal);

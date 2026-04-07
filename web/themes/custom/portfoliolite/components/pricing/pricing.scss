@@ -1,123 +1,173 @@
 .pricing {
-  padding: 100px 0;
+  padding: 100px 20px;
   background: #f5f5f5;
   text-align: center;
-}
+  margin-bottom: 200px;
 
-.pricing-header {
-  max-width: 700px;
-  margin: auto;
-  margin-bottom: 60px;
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
 
   h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 36px;
+    margin-bottom: 10px;
   }
 
-  p {
-    color: #777;
+  .subtitle {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 60px;
+    font-size: 14px;
   }
-}
 
-/* MAIN CONTAINER */
-.pricing-container {
-  display: flex;
-  justify-content: center;
-}
+  /* 🔥 ADD DEPTH */
+  .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    perspective: 1200px;
+  }
 
-/* Drupal field wrapper */
-.pricing-container > div {
-  width: 100%;
-}
+  /* CARD */
+  .pricing-card {
+    width: 350px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    transform-style: preserve-3d;
+    position: relative;
+    overflow: hidden;
 
-/* This wrapper actually holds all paragraph items */
-.pricing-container > div > div {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
+    /* 🔥 3D HOVER EFFECT */
+    &:hover {
+      transform: translateY(-20px) scale(1.05) rotateX(5deg) rotateY(-5deg);
+      box-shadow: 0 50px 100px rgba(0,0,0,0.25);
+    }
 
-/* PRICING CARD */
-.paragraph--type--pricing {
-  width: 360px;
-  background: #fff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column;
-}
+    /* ✨ GLOW OVERLAY */
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, #1abc9c, transparent, #1abc9c);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 0;
+    }
 
-/* HEADER */
-.paragraph--type--pricing > div:nth-child(1) {
-  background: #1c2a36;
-  color: #fff;
-  padding: 25px;
-  font-size: 22px;
-  font-weight: 600;
-}
+    &:hover::before {
+      opacity: 0.15;
+    }
 
-/* BODY WRAPPER */
-.paragraph--type--pricing > div:nth-child(2),
-.paragraph--type--pricing > div:nth-child(3),
-.paragraph--type--pricing > div:nth-child(4) {
-  padding: 15px 40px;
-}
+    .card-header {
+      background: #1e2a36;
+      color: #fff;
+      padding: 20px;
+      font-weight: 600;
+      font-size: 18px;
+      position: relative;
+      z-index: 1;
+    }
 
-/* PRICE */
-.paragraph--type--pricing > div:nth-child(2) div:last-child {
-  font-size: 70px;
-  font-weight: 900;
-  margin: 30px 0;
-}
+    .card-body {
+      padding: 40px 30px;
+      position: relative;
+      z-index: 1;
+    }
 
-/* FEATURES */
-.paragraph--type--pricing > div:nth-child(3) div:last-child {
-  line-height: 2;
-  color: #555;
-  margin-bottom: 30px;
-}
+    h3 {
+      font-size: 42px;
+      margin-bottom: 25px;
 
-/* BUTTON */
-.paragraph--type--pricing > div:nth-child(4) {
-  margin-bottom: 40px;
-}
+      span {
+        font-size: 14px;
+        color: #777;
+        margin-left: 5px;
+      }
+    }
 
-.paragraph--type--pricing > div:nth-child(4) a {
-  border: 2px solid #1abc9c;
-  padding: 12px 30px;
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  transition: 0.3s;
-}
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
 
-.paragraph--type--pricing > div:nth-child(4) a:hover {
-  background: black;
-  color: #fff;
-}
+      li {
+        margin: 10px 0;
+        color: #555;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+    }
 
-/* PRICING CARD */
-.paragraph--type--pricing {
-  width: 360px;
-  background: #fff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column;
-  transition: all 0.35s ease;
-  cursor: pointer;
-}
+    /* 🔥 BUTTON EFFECT */
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      border: 2px solid #1abc9c;
+      color: #1abc9c;
+      text-decoration: none;
+      font-size: 13px;
+      transition: all 0.3s ease;
 
-/* HOVER EFFECT */
-.paragraph--type--pricing:hover {
-  transform: scale(1.05);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.18);
-}
-.paragraph--type--pricing {
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
+      &:hover {
+        background: #1abc9c;
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(26, 188, 156, 0.4);
+      }
+    }
+  }
 
-.paragraph--type--pricing:hover {
-  transform: translateY(-12px) scale(1.04);
-  box-shadow: 0 30px 70px rgba(0,0,0,0.2);
+  /* LIGHT CARD */
+  .pricing-card.light {
+    background: #fff;
+
+    h3 {
+      color: #000;
+    }
+  }
+
+  /* DARK CARD */
+  .pricing-card.dark {
+    background: #1e2a36;
+    color: #fff;
+
+    h3 {
+      color: #fff;
+    }
+
+    ul li {
+      color: #ddd;
+    }
+
+    .btn {
+      border-color: #1abc9c;
+      color: #1abc9c;
+
+      &:hover {
+        background: #1abc9c;
+        color: #fff;
+      }
+    }
+
+    /* 🔥 STRONGER HOVER FOR DARK CARD */
+    &:hover {
+      transform: translateY(-25px) scale(1.07) rotateX(4deg);
+      box-shadow: 0 60px 120px rgba(0,0,0,0.4);
+    }
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .pricing-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pricing-card {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
 }

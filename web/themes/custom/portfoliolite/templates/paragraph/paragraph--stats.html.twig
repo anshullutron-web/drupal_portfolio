@@ -1,14 +1,33 @@
 <div class="stat-item">
 
+  <!-- ICON (CONDITION BASED) -->
   <div class="stat-icon">
-    {{ content.field_stats_icon }}
+    {% set number = paragraph.field_stats_number.value %}
+
+    {% if number == 2197 %}
+      <i class="fa-solid fa-code"></i>
+
+    {% elseif number == 1797 %}
+      <i class="fa-solid fa-mug-hot"></i>
+
+    {% elseif number == 778 %}
+      <i class="fa-regular fa-lightbulb"></i>
+
+    {% elseif number == 420 %}
+      <i class="fa-solid fa-trophy"></i>
+
+    {% else %}
+      <i class="fa-solid fa-star"></i> {# fallback #}
+    {% endif %}
   </div>
 
+  <!-- NUMBER -->
   <div class="stat-number"
-       data-count="{{ content.field_stats_number['#items'].0.value }}">
+       data-count="{{ number }}">
     {{ content.field_stats_number }}
   </div>
 
+  <!-- TITLE -->
   <div class="stat-title">
     {{ content.field_stats_subtitle }}
   </div>

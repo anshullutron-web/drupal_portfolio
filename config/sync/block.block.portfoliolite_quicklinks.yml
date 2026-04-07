@@ -1,6 +1,6 @@
 uuid: dae801fb-885c-4745-a48d-87dda4d9627c
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.quick-links

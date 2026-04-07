@@ -1,12 +1,55 @@
 {{ attach_library('portfoliolite/pricing') }}
+
 <section class="pricing">
   <div class="container">
-    <div class="pricing-header">
-      <h2>{{ title }}</h2>
-      <p>{{ description }}</p>
-    </div>
-    <div class="pricing-container">
-      {{ items }}
+
+    <!-- TITLE -->
+    <h2>Pricing Plan</h2>
+    <p class="subtitle">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi soluta maxime doloribus.
+    </p>
+
+    <!-- CARDS -->
+    <div class="pricing-cards">
+
+      <!-- LEFT CARD -->
+      <div class="pricing-card light">
+        <div class="card-header">Monthly Start Plan</div>
+
+        <div class="card-body">
+          <h3>$27 <span>/ Month</span></h3>
+
+          <ul>
+            <li>8 GB Disk Space</li>
+            <li>10 Domain Names</li>
+            <li>4 Email Address</li>
+            <li>Enhanced Security</li>
+            <li>Unlimited Support</li>
+          </ul>
+
+          <a href="#" class="btn">GET STARTED</a>
+        </div>
+      </div>
+
+      <!-- RIGHT CARD -->
+      <div class="pricing-card dark">
+        <div class="card-header">Yearly Best Plan</div>
+
+        <div class="card-body">
+          <h3>$99 <span>/ Month</span></h3>
+
+          <ul>
+            <li>20 GB Disk Space</li>
+            <li>15 Domain Names</li>
+            <li>10 Email Address</li>
+            <li>Enhanced Security</li>
+            <li>Unlimited Support</li>
+          </ul>
+
+          <a href="#" class="btn">GET STARTED</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

@@ -1,32 +1,72 @@
-{{ attach_library('portfoliolite/footer') }}
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
 
-<div class="footer-wrapper">
+      <!-- LEFT -->
+      <div class="footer-col footer-about">
+        <h2 class="logo"><img src="{{ directory }}/img/logo.png" alt=""></h2>
+        <h4>Creative Design</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Velit ad mollitia est obcaecati. Lorem ipsum dolor sit amet.
+        </p>
+      </div>
 
-  <div class="footer-grid">
+      <!-- QUICK LINKS -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-col footer-about">
-      {{ content.footer_left1 }}
+      <!-- SUPPORT -->
+      <div class="footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">FAQ’s</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Policy</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+
+      <!-- BLOG -->
+      <div class="footer-col footer-blog">
+        <h3>Recent Blog</h3>
+
+        <div class="blog-item">
+          <img src="{{ directory }}/img/blog-001.jpg" alt="">
+          <span><a href="#">Five Best Responsive Web Design Practices in 2019</a></span>
+        </div>
+
+        <div class="blog-item">
+          <img src="{{ directory }}/img/blog-002.jpg" alt="">
+          <span><a href="#">How to Create a Professional Web Layout in Photoshop</a></span>
+        </div>
+
+      </div>
+
     </div>
-
-    <div class="footer-col">
-      {{ content.quicklinks }}
-    </div>
-
-    <div class="footer-col">
-      {{ content.support }}
-    </div>
-
-    <div class="footer-col footer-blog">
-      {{ content.footer_right2 }}
-    </div>
-
   </div>
 
-  {% if page.footer %}
-  <div class="footer-bottom-extreme">
-    {{ page.footer }}
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <a href="#">f</a>
+      <a href="#">t</a>
+      <a href="#">in</a>
+      <a href="#">p</a>
+      <a href="#">ig</a>
+    </div>
+
+    <p>
+      © morox business theme, All Rights Reserved | Designed by GEC Designs
+    </p>
   </div>
-  {% endif %}
-
-</div>
-
+</footer>

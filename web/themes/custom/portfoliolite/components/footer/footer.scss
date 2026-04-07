@@ -1,130 +1,148 @@
 .site-footer {
+  font-family: Arial, sans-serif;
 
   .footer-top {
-    background: white;
-    padding: 60px 0;
+    background: #f3f3f3;
+    padding: 60px 20px;
 
     .container {
-    max-width: 1200px;   // 👈 add this
-    margin: 0 auto;      // 👈 center it
-    padding: 0 20px;     // 👈 side spacing
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
 
-      /* THIS IS THE REAL FIX */
-      > div {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
-        padding: 0 10px;
+    .footer-col {
+      h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-weight: 600;
       }
 
+      ul {
+        list-style: none;
+        padding: 0;
 
-      /* EACH BLOCK */
-      > div > div {
-        width: 100%;
-      }
+        li {
+          margin-bottom: 10px;
 
-      /* BLOCK STYLING */
-      .block {
-        h2, h3, h4 {
-          font-size: 20px;
-          font-weight: 600;
-          margin-bottom: 15px;
-          color: #222;
-        }
+          a {
+            text-decoration: none;
+            color: #333;
 
-        p {
-          color: #555;
-          line-height: 1.6;
-        }
-
-        ul {
-          list-style: none;
-          padding: 0;
-
-          li {
-            margin-bottom: 10px;
-
-            a {
-              text-decoration: none;
-              color: #555;
-
-              &:hover {
-                color: #00a88f;
-              }
+            &:hover {
+              color: #0ea58a;
             }
           }
         }
       }
+    }
 
-      /* BLOG FIX */
-      .block-block-content p {
+    .footer-about {
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #0ea58a;
+        margin-bottom: 15px;
+      }
+
+      h4 {
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+
+      p {
+        color: #444;
+        line-height: 1.6;
+      }
+    }
+
+    .footer-blog {
+      .blog-item {
         display: flex;
-        align-items: center;
         gap: 10px;
+        margin-bottom: 15px;
 
         img {
-          width: 70px;
+          width: 60px;
           height: 50px;
           object-fit: cover;
         }
-      }
 
-    }
-  }
-
-  /* FOOTER SECOND */
-  .footer-bottom {
-    background: #9bbab3;
-    padding: 25px 0;
-
-    .container {
-      display: flex;
-      justify-content: center;
-    }
-
-    .block-addtoany {
-      display: flex;
-      gap: 15px;
-
-      a {
-        width: 45px;
-        height: 45px;
-        background: #00a88f;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-
-        &:hover {
-          background: #00796b;
+        span {
+          font-size: 14px;
+          color: #333;
         }
       }
     }
   }
 
-.footer-bottom-extreme {
-  background: #9bbab3;
-  padding: 20px 0;
-  text-align: center;
+  /* BOTTOM */
+  .footer-bottom {
+    background: #a8c2bd;
+    padding: 30px 20px;
+    text-align: center;
 
-  p {
-    color: #fff;
-    margin: 0;
-    font-size: 14px;
+    .social-icons {
+      margin-bottom: 15px;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background: #0ea58a;
+        color: #fff;
+        border-radius: 50%;
+        margin: 0 8px;
+        text-decoration: none;
+        font-size: 16px;
+
+        &:hover {
+          background: #0c8f77;
+        }
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: #222;
+    }
   }
-}
 
   /* RESPONSIVE */
-  @media (max-width: 992px) {
-    .footer-top .container > div {
+
+  @media (max-width: 1024px) {
+    .footer-top .container {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media (max-width: 576px) {
-    .footer-top .container > div {
+  @media (max-width: 600px) {
+    .footer-top {
+      padding: 40px 15px;
+    }
+
+    .footer-top .container {
       grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .footer-blog .blog-item {
+      justify-content: center;
+    }
+
+    .footer-bottom .social-icons a {
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+    }
+
+    .footer-bottom p {
+      font-size: 14px;
+      line-height: 1.5;
     }
   }
 }
