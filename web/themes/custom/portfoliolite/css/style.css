@@ -79,7 +79,7 @@
 .header-container {
   display: flex;
   align-items: center;
-  padding: 20px 60px;
+  padding: 6px 70px;
 }
 
 .logo {
@@ -88,7 +88,7 @@
 }
 
 .logo img {
-  height: 50px;
+  height: 45px;
 }
 
 .header-container > div:nth-child(2) {
@@ -115,7 +115,7 @@
 .main-menu a {
   text-decoration: none;
   color: #333;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -162,6 +162,43 @@ body.toolbar-tray-open.toolbar-fixed .main-header.sticky {
   top: 78px;
 }
 
+/* 📱 MOBILE (0–767px) */
+@media (max-width: 767px) {
+  .main-menu {
+    padding-left: 5px !important; /* small edge spacing */
+    gap: 5px !important;
+    flex-wrap: wrap; /* prevents overflow */
+  }
+  .header-container > div:nth-child(2) {
+    margin-left: 0;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+/* 📲 TABLET (768px–1399px) */
+@media (min-width: 768px) and (max-width: 1399px) {
+  .main-menu {
+    padding-left: 20px !important; /* medium push */
+    gap: 10px !important;
+  }
+  .header-container > div:nth-child(2) {
+    margin-left: 0;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  .main-menu {
+    padding-left: 800px !important; /* overrides 430px */
+    margin-left: 0 !important;
+    gap: 80px !important;
+  }
+  .header-container > div:nth-child(2) {
+    margin-left: 0;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
 .hero {
   position: relative;
   min-height: 750px;
