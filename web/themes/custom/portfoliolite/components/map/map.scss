@@ -1,24 +1,63 @@
 section.map {
-  width: 99.5%;
+  width: 97%;
   margin: 0;
   padding: 0;
 }
 
-/* REMOVE TITLE (Location) */
 section.map > div > div > div:first-child {
   display: none !important;
 }
 section.map div {
   margin: 0;
   padding: 0;
+  padding-left: 12px;
+
 }
 
 section.map iframe {
-  width: 99.5vw !important;
+  width: 97vw !important;
   height: 450px !important;
   display: block;
   border: 0;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (max-width: 1024px) {
+  section.map iframe {
+    width: 98vw;
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.map iframe {
+    width: 100vw;
+    height: 300px;
+  }
+
+  section.map div {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  section.map {
+    width: 98%;
+  }
+
+  section.map iframe {
+    width: 98vw;
+    max-width: 1800px; 
+    height: 500px;
+  }
+}
+
+@media (min-width: 1920px) {
+  section.map iframe {
+    width: 98vw;
+    max-width: 2000px;
+    height: 550px;
+  }
 }
