@@ -1,8 +1,3 @@
-/* =========================
-   MAP FULL WIDTH FIX
-   ========================= */
-
-/* TARGET YOUR SECTION */
 section.map {
   width: 99.5%;
   margin: 0;
@@ -13,21 +8,16 @@ section.map {
 section.map > div > div > div:first-child {
   display: none !important;
 }
-
-/* REMOVE WRAPPER SPACING */
 section.map div {
   margin: 0;
   padding: 0;
 }
 
-/* FORCE FULL WIDTH MAP */
 section.map iframe {
   width: 99.5vw !important;
   height: 450px !important;
   display: block;
   border: 0;
-
-  /* BREAK OUT OF CONTAINER */
   position: relative;
   left: 50%;
   transform: translateX(-50%);

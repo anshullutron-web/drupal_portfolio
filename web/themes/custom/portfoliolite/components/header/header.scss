@@ -1,46 +1,28 @@
-/* HEADER */
-
 .main-header {
   background: #fff;
 }
-
-/* LAYOUT */
-
 .header-container {
   display: flex;
   align-items: center;
   padding: 20px 60px;
 }
-
-/* LOGO */
-
 .logo {
   display: flex;
   align-items: center;
 }
-
 .logo img {
   height: 50px;
 }
-
-/* 🔥 THIS IS THE REAL FIX */
-
 .header-container > div:nth-child(2) {
   margin-left: auto;      /* pushes menu block right */
   display: flex;
   align-items: center;
 }
-
-/* FIX DRUPAL WRAPPERS */
-
 .header-container > div:nth-child(2) nav,
 .header-container > div:nth-child(2) nav > div {
   display: flex;
   align-items: center;
 }
-
-/* MENU */
-
 .main-menu {
   display: flex;
   gap: 40px;
@@ -49,24 +31,15 @@
   padding: 0;
   padding-left: 430px;
 }
-
-/* LINKS */
-
 .main-menu a {
   text-decoration: none;
   color: #333;
   font-size: 17px;
   font-weight: 500;
 }
-
-/* Hover */
-
 .main-menu a:hover {
   color: #00c4a7;
 }
-
-/* STICKY HEADER */
-
 .main-header.sticky {
   position: fixed;
   top: 0;
@@ -74,29 +47,29 @@
   width: 100%;
   z-index: 9999;
   background: #fff;
-
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
-
-/* =========================
-   DRUPAL ADMIN TOOLBAR FIX
-========================= */
-
 body.toolbar-fixed .main-header.sticky {
   top: 33px;
 }
-
 body.toolbar-tray-open.toolbar-fixed .main-header.sticky {
   top: 78px;
 }
-@media (min-width: 1400px) {
-  .main-menu {
-    padding-left: 840px;
+.main-header {
+  background: #fff;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   }
 }
-
-@media (min-width: 1600px) {
-  .main-menu {
-    padding-left: 1000px;   /* your requirement */
-  }
+body.toolbar-fixed .main-header.sticky {
+  top: 33px;
+}
+body.toolbar-tray-open.toolbar-fixed .main-header.sticky {
+  top: 78px;
 }

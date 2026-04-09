@@ -69,6 +69,7 @@
 
     {% include directory ~ '/components/pricing/pricing.twig' %}
 
+    {% include directory ~ '/components/blog/blog.twig' %}
     {% if page.blog %}
     <section class="blog">
       {{ page.blog }}
@@ -111,7 +112,6 @@
       </div>
     </div>
   {% endif %}
-
   {% if page.footer_second %}
     <div class="footer-bottom">
       <div class="container">
@@ -119,7 +119,6 @@
       </div>
     </div>
   {% endif %}
-
 
   {% if page.footer %}
     <div class="footer-bottom-extreme">

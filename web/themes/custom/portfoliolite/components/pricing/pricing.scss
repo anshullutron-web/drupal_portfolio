@@ -2,7 +2,6 @@
   padding: 100px 20px;
   background: #f5f5f5;
   text-align: center;
-  margin-bottom: 200px;
 
   .container {
     max-width: 1100px;
@@ -21,7 +20,6 @@
     font-size: 14px;
   }
 
-  /* 🔥 ADD DEPTH */
   .pricing-cards {
     display: flex;
     justify-content: center;
@@ -30,7 +28,6 @@
     perspective: 1200px;
   }
 
-  /* CARD */
   .pricing-card {
     width: 350px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.08);
@@ -39,13 +36,11 @@
     position: relative;
     overflow: hidden;
 
-    /* 🔥 3D HOVER EFFECT */
     &:hover {
       transform: translateY(-20px) scale(1.05) rotateX(5deg) rotateY(-5deg);
       box-shadow: 0 50px 100px rgba(0,0,0,0.25);
     }
 
-    /* ✨ GLOW OVERLAY */
     &::before {
       content: "";
       position: absolute;
@@ -100,7 +95,6 @@
       }
     }
 
-    /* 🔥 BUTTON EFFECT */
     .btn {
       display: inline-block;
       padding: 10px 25px;
@@ -119,7 +113,6 @@
     }
   }
 
-  /* LIGHT CARD */
   .pricing-card.light {
     background: #fff;
 
@@ -128,7 +121,6 @@
     }
   }
 
-  /* DARK CARD */
   .pricing-card.dark {
     background: #1e2a36;
     color: #fff;
@@ -150,15 +142,12 @@
         color: #fff;
       }
     }
-
-    /* 🔥 STRONGER HOVER FOR DARK CARD */
     &:hover {
       transform: translateY(-25px) scale(1.07) rotateX(4deg);
       box-shadow: 0 60px 120px rgba(0,0,0,0.4);
     }
   }
 
-  /* RESPONSIVE */
   @media (max-width: 768px) {
     .pricing-cards {
       flex-direction: column;

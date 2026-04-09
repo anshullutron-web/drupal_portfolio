@@ -1,6 +1,6 @@
 uuid: 1912150d-95f1-4b7d-8982-a709fa1ce0bb
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.our_blog_view_

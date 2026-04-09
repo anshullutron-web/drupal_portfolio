@@ -22,3 +22,7 @@
     }
   };
 })(Drupal, once);
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.main-menu').classList.toggle('active');
+});
