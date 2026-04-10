@@ -4,17 +4,14 @@
   font-size: 14px;
   padding: 8px 0;
 }
-
 .topbar-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .topbar-left,
 .topbar-center,
 .topbar-right {
@@ -22,36 +19,23 @@
   align-items: center;
   gap: 10px;
 }
-
 .topbar i {
   color: #00c4a7;
   font-size: 14px;
 }
-
 .topbar span {
   color: #fff;
 }
-/* =========================
-   TABLET + MOBILE FIX
-========================= */
-
 @media (max-width: 992px) {
-
-  /* hide text */
   .topbar span {
     display: none;
   }
-
-  /* keep icons visible and slightly bigger */
   .topbar i {
     font-size: 16px;
   }
-
-  /* adjust spacing */
   .topbar-left,
   .topbar-center,
   .topbar-right {
     gap: 15px;
   }
-
 }

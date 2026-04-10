@@ -55,7 +55,6 @@ body.toolbar-fixed .main-header.sticky {
 body.toolbar-tray-open.toolbar-fixed .main-header.sticky {
   top: 78px;
 }
-
 .main-header {
   background: #fff;
   &.sticky {
@@ -74,19 +73,15 @@ body.toolbar-fixed .main-header.sticky {
 body.toolbar-tray-open.toolbar-fixed .main-header.sticky {
   top: 78px;
 }
-
 @media (min-width: 1400px) {
-
   .main-menu {
     padding-left: 800px !important;   
     margin-left: 0 !important;
     gap: 80px !important;
   }
-
   .header-container > div:nth-child(2) {
     margin-left: 0;
     justify-content: flex-start;
     width: 100%;
   }
-
 }

@@ -10,21 +10,18 @@
   padding: 20px 0;
   margin: 0 auto;
 }
-
 .subscribe h2 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 12px;
   color: #1a1a1a;
 }
-
 .subscribe p {
   max-width: 650px;
   margin: 0 auto 25px;
   line-height: 1.6;
   color: #2f2f2f;
 }
-
 .subscribe .form-type-checkbox {
   margin-bottom: 20px;
   font-size: 16px;
@@ -32,7 +29,6 @@
   justify-content: center;
   gap: 10px;
 }
-
 .subscribe form {
   display: flex;
   align-items: center;
@@ -41,11 +37,9 @@
   width: fit-content;
   margin: 0 auto;
 }
-
 .subscribe .form-item {
   margin: 0;
 }
-
 .subscribe input[type="email"] {
   width: 600px;
   max-width: 70vw;
@@ -55,15 +49,12 @@
   font-size: 16px;
   border-radius: 3px 0 0 3px;
 }
-
 .subscribe label[for*="email"] {
   display: none;
 }
-
 .subscribe .form-actions {
   margin: 0;
 }
-
 .subscribe input[type="submit"] {
   background: #0ea58a;
   color: white;
@@ -76,7 +67,6 @@
   display: flex;
   align-items: center;
 }
-
 .subscribe input[type="submit"] {
   font-family: inherit;
 }
